@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "NextCook - Cookbook de Next.js",
+    "description": "Guia completo de Next.js com exemplos práticos",
+    "ogDescription": "Aprenda Next.js com exemplos práticos e receitas prontas para usar em seus projetos. Cookbook completo com hooks, componentes, APIs e muito mais.",
+    "keywords": "Next.js, React, JavaScript, TypeScript, Tutorial, Cookbook, Hooks, Components, API",
+    "author": "NextCook Team"
+  },
+  "home": {
+    "title": "NextCook",
+    "subtitle": "Seu cookbook completo para Next.js",
+    "description": "Aprenda Next.js com exemplos práticos e receitas prontas para usar em seus projetos."
+  },
+  "features": {
+    "title": "Recursos",
+    "subtitle": "Tudo que você precisa para dominar Next.js"
+  },
+  "footer": {
+    "copyright": "© 2024 NextCook. Todos os direitos reservados.",
+    "description": "Cookbook completo de Next.js",
+    "technologies": "Tecnologias"
+  },
+  "common": {
+    "learnMore": "Saiba mais",
+    "getStarted": "Começar",
+    "documentation": "Documentação",
+    "examples": "Exemplos",
+    "explore": "Explorar"
+  },
+  "navigation": {
+    "home": "Início",
+    "snippets": "Snippets",
+    "favorites": "Favoritos",
+    "explore": "Explorar",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar páginas, hooks, componentes...",
+    "searchShortcut": "Ctrl K",
+    "searchLabel": "Buscar (Ctrl+K)",
+    "favoritesLabel": "Favoritos ({count} itens)",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "menuLabel": "Menu de navegação principal",
+    "openSearch": "Abrir busca rápida",
+    "exploreAllSections": "Explorar todas as seções",
+    "help": "Ajuda",
+    "pagesAvailable": "{count} páginas disponíveis",
+    "switchToDark": "Alternar para tema escuro",
+    "switchToLight": "Alternar para tema claro",
+    "themeToggle": "Alternar tema",
+    "categories": {
+      "framework": {
+        "name": "Framework",
+        "description": "Next.js & React fundamentals"
+      },
+      "development": {
+        "name": "Development",
+        "description": "Hooks, TypeScript & Code Snippets"
+      },
+      "backend": {
+        "name": "Backend & APIs",
+        "description": "Server-side development"
+      },
+      "database": {
+        "name": "Database",
+        "description": "Database design & optimization"
+      },
+      "frontend": {
+        "name": "Frontend & UI",
+        "description": "User interface & design systems"
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "description": "Payment systems & shopping features"
+      },
+      "ai-ml": {
+        "name": "AI & ML",
+        "description": "Artificial Intelligence & Machine Learning"
+      },
+      "cms": {
+        "name": "CMS",
+        "description": "Content Management Systems"
+      },
+      "quality": {
+        "name": "Quality & Testing",
+        "description": "Testing, performance & security"
+      },
+      "deploy": {
+        "name": "Deploy & DevOps",
+        "description": "Deployment & monitoring"
+      },
+      "advanced": {
+        "name": "Advanced",
+        "description": "Advanced features & integrations"
+      },
+      "tools": {
+        "name": "Tools & Help",
+        "description": "Utilities & troubleshooting"
+      }
+    }
+  }
+}
