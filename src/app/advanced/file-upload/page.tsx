@@ -1050,7 +1050,7 @@ export default function FileUploadPage() {
 
         {/* Features */}
         <DemoSection title="Recursos Principais" description="Funcionalidades para upload e gerenciamento de arquivos">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {uploadFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -1081,7 +1081,7 @@ export default function FileUploadPage() {
 
         {/* File Types */}
         <DemoSection title="Tipos de Arquivo Suportados" description="Diferentes formatos e suas características">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             {fileTypes.map((fileType) => {
               const Icon = fileType.icon;
               return (
@@ -1116,7 +1116,7 @@ export default function FileUploadPage() {
         {/* Interactive Demo */}
         <DemoSection title="Demo Interativo" description="Teste o upload de arquivos">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-1.5">
               {/* Upload Area */}
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
@@ -1275,7 +1275,7 @@ export default function FileUploadPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementar upload de arquivos">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-red-500" />

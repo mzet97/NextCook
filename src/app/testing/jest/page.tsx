@@ -292,7 +292,7 @@ export default function JestPage() {
 
         {/* Jest Features */}
         <DemoSection title="Recursos do Jest" description="Principais funcionalidades para testes eficazes">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {jestFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -313,7 +313,7 @@ export default function JestPage() {
 
         {/* Configuration */}
         <DemoSection title="Configuração" description="Setup completo do Jest">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="jest.config.ts" description="Configuração principal">
               <CodeBlock
                 language="typescript"
@@ -468,7 +468,7 @@ Object.defineProperty(window, 'matchMedia', {
 
         {/* Commands */}
         <DemoSection title="Comandos Úteis" description="Scripts para desenvolvimento">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Comandos Básicos" description="Execução de testes">
               <CodeBlock
                 language="bash"

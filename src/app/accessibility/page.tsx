@@ -539,7 +539,7 @@ export default function AccessibilityPage() {
               Configurações de Acessibilidade
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {/* High Contrast */}
               <div className="space-y-2">
                 <label className="flex items-center gap-3 cursor-pointer">
@@ -719,7 +719,7 @@ export default function AccessibilityPage() {
               Melhores Práticas Implementadas
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />

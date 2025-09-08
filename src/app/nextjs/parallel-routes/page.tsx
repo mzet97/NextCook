@@ -597,7 +597,7 @@ export default function ParallelRoutesPage() {
             title="Benefícios das Parallel Routes"
             description="Entenda as vantagens de usar parallel routes em suas aplicações"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
               {benefits.map((benefit) => (
                 <div key={benefit.title} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
                   <div className="flex items-center space-x-3 mb-4">

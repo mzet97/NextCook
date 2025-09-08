@@ -104,7 +104,7 @@ export default function AuthenticationPage() {
         </motion.div>
 
         <DemoSection title="Métodos de Autenticação">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {authMethods.map((method, index) => {
               const IconComponent = method.icon;
               return (
@@ -157,7 +157,7 @@ export default function AuthenticationPage() {
         </DemoSection>
 
         <DemoSection title="JWT Authentication">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração JWT</h3>
               <CodeBlock
@@ -380,7 +380,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Refresh Token">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibent mb-4">Renovar Token</h3>
               <CodeBlock
@@ -572,7 +572,7 @@ export async function DELETE(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Autorização e Controle de Acesso">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">RBAC (Role-Based Access Control)</h3>
               <CodeBlock
@@ -829,7 +829,7 @@ export async function PUT(
         </DemoSection>
 
         <DemoSection title="Recursos de Segurança">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {securityFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
@@ -852,7 +852,7 @@ export async function PUT(
         </DemoSection>
 
         <DemoSection title="Two-Factor Authentication (2FA)">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configurar 2FA</h3>
               <CodeBlock
@@ -1063,7 +1063,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="OAuth 2.0 Integration">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Google OAuth</h3>
               <CodeBlock

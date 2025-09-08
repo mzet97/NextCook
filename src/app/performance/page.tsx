@@ -664,7 +664,7 @@ function VirtualList({ items, itemHeight = 50, containerHeight = 300 }) {
 
         <div className="mt-16 bg-gradient-to-r from-emerald-100 to-cyan-100 dark:from-emerald-900/30 dark:to-cyan-900/30 rounded-xl p-8">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🚀 Técnicas de Performance</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">React Optimizations</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">

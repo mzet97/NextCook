@@ -175,7 +175,7 @@ export default function NextAuthPage() {
 
         {/* Features Overview */}
         <DemoSection title="Recursos Principais" description="Tudo que você precisa para autenticação moderna">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {authFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -206,7 +206,7 @@ export default function NextAuthPage() {
 
         {/* OAuth Providers */}
         <DemoSection title="Provedores OAuth" description="Integração com os principais serviços de autenticação">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {oauthProviders.map((provider, index) => {
               const Icon = provider.icon;
               return (
@@ -286,7 +286,7 @@ export default function NextAuthPage() {
             
             <div className="p-6">
               {selectedTab === 'setup' && (
-                <div className="grid lg:grid-cols-2 gap-6">
+                <div className="grid lg:grid-cols-2 gap-1.5">
                   <div>
                     <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Instalação</h3>
                     <CodeBlock
@@ -597,7 +597,7 @@ export default NextAuth({
               
               {selectedTab === 'sessions' && (
                 <div className="space-y-6">
-                  <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="grid lg:grid-cols-2 gap-1.5">
                     {sessionStrategies.map((strategy, index) => (
                       <div key={strategy.name} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -839,7 +839,7 @@ export default NextAuth({
 
         {/* Interactive Auth Demo */}
         <DemoSection title="Demo Interativo" description="Teste o fluxo de autenticação">
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 gap-1.5">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
               <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Autenticação</h3>
               
@@ -1075,7 +1075,7 @@ export function ProtectedPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementar autenticação segura">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-green-500" />

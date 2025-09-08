@@ -583,7 +583,7 @@ export default function ConnectionPoolingPage() {
           <>
             {/* Features Overview */}
             <DemoSection title="Recursos do Connection Pooling" description="Principais benefícios e funcionalidades">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
                 {poolingFeatures.map((feature, index) => (
                   <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                     <div className="flex items-center mb-4">
@@ -609,7 +609,7 @@ export default function ConnectionPoolingPage() {
             {/* Pool Architecture */}
             <DemoSection title="Arquitetura do Pool" description="Como funciona o connection pooling">
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
                   <div className="text-center">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
                       <Users className="w-8 h-8 text-green-600" />
@@ -677,7 +677,7 @@ export default function ConnectionPoolingPage() {
 
         {activeTab === 'practices' && (
           <DemoSection title="Melhores Práticas" description="Diretrizes para connection pooling eficiente">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
               {bestPractices.map((practice, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <div className="flex items-center mb-4">
@@ -703,7 +703,7 @@ export default function ConnectionPoolingPage() {
         <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-8 text-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-6 text-center">Impacto na Performance</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
               <div className="text-center p-6 bg-white/10 rounded-lg">
                 <Zap className="w-8 h-8 mx-auto mb-3" />
                 <h3 className="text-lg font-semibold mb-2">Redução de Latência</h3>

@@ -294,7 +294,7 @@ export default function SecurityPage() {
 
         {/* Security Features */}
         <DemoSection title="Recursos de Segurança" description="Implementações essenciais para proteger sua aplicação">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {securityFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -332,7 +332,7 @@ export default function SecurityPage() {
         {/* Security Metrics Dashboard */}
         <DemoSection title="Dashboard de Segurança" description="Métricas e indicadores de segurança em tempo real">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {securityMetrics.map((metric, index) => (
                 <motion.div
                   key={metric.name}
@@ -409,7 +409,7 @@ export default function SecurityPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <div className="flex items-center space-x-3 mb-4">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -524,7 +524,7 @@ export default function SecurityPage() {
 
         {/* Implementation Guide */}
         <DemoSection title="Guia de Implementação" description="Passos para implementar segurança robusta">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {implementationSteps.map((step, index) => (
               <motion.div
                 key={step.step}
@@ -560,7 +560,7 @@ export default function SecurityPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para segurança robusta">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Lock className="h-5 w-5 mr-2 text-red-500" />

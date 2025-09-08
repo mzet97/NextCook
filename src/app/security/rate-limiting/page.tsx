@@ -492,7 +492,7 @@ export default function RateLimitingPage() {
         {/* Rate Limiting Demo */}
         <DemoSection title="Simulação em Tempo Real" description="Visualize como o rate limiting funciona na prática">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-1.5">
               <div className="lg:col-span-2">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -644,7 +644,7 @@ export default function RateLimitingPage() {
 
         {/* Rate Limiting Strategies */}
         <DemoSection title="Estratégias de Rate Limiting" description="Diferentes algoritmos e suas características">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             {rateLimitingStrategies.map((strategy, index) => (
               <motion.div
                 key={strategy.name}
@@ -746,7 +746,7 @@ export default function RateLimitingPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <div className="flex items-center space-x-3 mb-4">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -852,7 +852,7 @@ export default function RateLimitingPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementação efetiva">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Settings className="h-5 w-5 mr-2 text-blue-500" />

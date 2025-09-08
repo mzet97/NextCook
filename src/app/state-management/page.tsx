@@ -151,7 +151,7 @@ export default function StateManagementPage() {
 
         {/* State Types */}
         <DemoSection title="Tipos de Estado" description="Entenda os diferentes tipos de estado em aplicações React">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {stateTypes.map((stateType) => (
               <DemoCardStatic key={stateType.type} title={stateType.type} description={stateType.description}>
                 <div className="space-y-4">
@@ -186,7 +186,7 @@ export default function StateManagementPage() {
 
         {/* State Management Tools */}
         <DemoSection title="Ferramentas de State Management" description="Compare e explore diferentes soluções">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {stateManagementTools.map((tool) => {
               const Icon = tool.icon;
               return (
@@ -318,7 +318,7 @@ export default function StateManagementPage() {
 
         {/* Decision Guide */}
         <DemoSection title="Guia de Decisão" description="Escolha a ferramenta certa para seu projeto">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Quando usar Redux Toolkit" description="Cenários ideais para RTK">
               <div className="space-y-3">
                 <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded">
@@ -426,7 +426,7 @@ const { data, isLoading, error } = useQuery({
         {/* Performance Tips */}
         <DemoSection title="Dicas de Performance" description="Otimizações para cada ferramenta">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   🚀 Otimizações Gerais

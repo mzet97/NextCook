@@ -377,7 +377,7 @@ function TodoList({ items }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
           <DemoSection title="Formulário com Labels">
             <FormWithUseId />
           </DemoSection>
@@ -387,7 +387,7 @@ function TodoList({ items }) {
           </DemoSection>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
           <DemoSection title="Tabs com Acessibilidade">
             <TabsWithUseId />
           </DemoSection>
@@ -402,7 +402,7 @@ function TodoList({ items }) {
           <CodeBlock code={codeExample} language="tsx" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5 mb-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Por que usar useId?</h2>
             <div className="space-y-4">
@@ -454,7 +454,7 @@ function TodoList({ items }) {
 
         <div className="bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 rounded-xl p-8">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🎯 Melhores Práticas</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">✅ Faça:</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">

@@ -139,7 +139,7 @@ export default function ReduxToolkitPage() {
 
         {/* Store Setup */}
         <DemoSection title="Configuração da Store" description="Setup completo do Redux Toolkit">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="store.ts" description="Configuração principal da store">
               <CodeBlock
                 language="typescript"
@@ -203,7 +203,7 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;`}
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Redux Toolkit efetivamente">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Faça" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[

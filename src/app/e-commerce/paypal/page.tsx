@@ -522,7 +522,7 @@ export default function PayPalPage() {
 
         {/* Features */}
         <DemoSection title="Recursos do PayPal" description="Principais funcionalidades da integração PayPal">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {paypalFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -553,7 +553,7 @@ export default function PayPalPage() {
 
         {/* Payment Methods */}
         <DemoSection title="Métodos de Pagamento" description="Opções de pagamento suportadas pelo PayPal">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {paymentMethods.map((method, index) => (
               <motion.div
                 key={method.name}
@@ -665,7 +665,7 @@ export default function PayPalPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para integração PayPal">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Recomendações" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[
@@ -710,7 +710,7 @@ export default function PayPalPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial da integração PayPal">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Configuração Inicial" description="Setup do ambiente PayPal">
               <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
                 <pre className="text-green-400 text-sm">

@@ -458,7 +458,7 @@ export default function SecurityHeadersPage() {
         {/* Header Testing Demo */}
         <DemoSection title="Teste de Headers" description="Verifique os headers de segurança da sua aplicação">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   Headers Atuais
@@ -576,7 +576,7 @@ export default function SecurityHeadersPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <div className="flex items-center space-x-3 mb-4">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -685,7 +685,7 @@ export default function SecurityHeadersPage() {
         {/* Security Checklist */}
         <DemoSection title="Checklist de Segurança" description="Verifique se sua aplicação está protegida">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-purple-500" />
@@ -736,7 +736,7 @@ export default function SecurityHeadersPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para configuração segura">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Lock className="h-5 w-5 mr-2 text-purple-500" />

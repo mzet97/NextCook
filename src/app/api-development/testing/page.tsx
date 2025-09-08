@@ -100,7 +100,7 @@ export default function APITestingPage() {
         </motion.div>
 
         <DemoSection title="Tipos de Testes">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {testingTypes.map((test, index) => {
               const IconComponent = test.icon;
               return (
@@ -138,7 +138,7 @@ export default function APITestingPage() {
         </DemoSection>
 
         <DemoSection title="Configuração do Jest">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Instalação</h3>
               <CodeBlock
@@ -195,7 +195,7 @@ module.exports = createJestConfig(customJestConfig);`}
         </DemoSection>
 
         <DemoSection title="Unit Tests - Testando Funções">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Função a ser testada</h3>
               <CodeBlock
@@ -391,7 +391,7 @@ describe('Auth Utils', () => {
         </DemoSection>
 
         <DemoSection title="Integration Tests - Testando APIs">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Setup de Testes</h3>
               <CodeBlock
@@ -613,7 +613,7 @@ describe('/api/users', () => {
         </DemoSection>
 
         <DemoSection title="Mocking com MSW">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração MSW</h3>
               <CodeBlock
@@ -783,7 +783,7 @@ describe('/api/external-integration', () => {
         </DemoSection>
 
         <DemoSection title="E2E Tests com Playwright">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração Playwright</h3>
               <CodeBlock
@@ -999,7 +999,7 @@ test.describe('User Management E2E', () => {
         </DemoSection>
 
         <DemoSection title="Load Testing com Artillery">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração Artillery</h3>
               <CodeBlock
@@ -1214,7 +1214,7 @@ monitorAPI(); // Executar imediatamente`}
         </DemoSection>
 
         <DemoSection title="Ferramentas de Teste">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {testingTools.map((tool, index) => {
               const IconComponent = tool.icon;
               return (

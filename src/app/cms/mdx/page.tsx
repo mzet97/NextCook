@@ -310,7 +310,7 @@ export default async function PostPage({ params }: Props) {
               {post.meta.title}
             </h1>
             
-            <div className="flex items-center justify-center gap-6 text-gray-600 mb-8">
+            <div className="flex items-center justify-center gap-1.5 text-gray-600 mb-8">
               <span>Por {post.meta.author}</span>
               <span>•</span>
               <time>{new Date(post.meta.date).toLocaleDateString('pt-BR')}</time>
@@ -513,7 +513,7 @@ export default function MDXPage() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
           {mdxFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-center mb-4">
@@ -659,7 +659,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         </div>
 
         {/* MDX Example */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-8">
           <DemoCardStatic
             title="MDX File Example"
             description="Exemplo de arquivo MDX com frontmatter"

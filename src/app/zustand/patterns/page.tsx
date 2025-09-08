@@ -469,7 +469,7 @@ export default function ZustandPatternsPage() {
           </p>
         </div>
 
-        <div className="grid gap-8">
+        <div className="grid gap-1.5">
           <SingletonDemo />
           <ObserverDemo />
           <FactoryDemo />

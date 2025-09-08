@@ -243,7 +243,7 @@ export default function EnvironmentPage() {
 
         {/* Features */}
         <DemoSection title="Recursos Principais" description="Ferramentas para gerenciar configurações">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {environmentFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -274,7 +274,7 @@ export default function EnvironmentPage() {
 
         {/* Environment Types */}
         <DemoSection title="Tipos de Ambiente" description="Características e configurações por ambiente">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {environmentTypes.map((env, index) => (
               <motion.div
                 key={env.name}
@@ -437,7 +437,7 @@ export default function EnvironmentPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para gerenciar configurações seguramente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-green-500" />
@@ -486,7 +486,7 @@ export default function EnvironmentPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial de environment management">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Setup Básico" description="Configuração inicial de variáveis">
               <CodeBlock
                 language="bash"

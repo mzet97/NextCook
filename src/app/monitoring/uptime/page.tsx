@@ -885,7 +885,7 @@ export default function UptimePage() {
 
         {/* Features */}
         <DemoSection title="Recursos de Monitoramento" description="Funcionalidades para garantir alta disponibilidade">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {uptimeFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -918,7 +918,7 @@ export default function UptimePage() {
         <DemoSection title="Visão Geral" description="Status atual dos serviços monitorados">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
             {/* Overall Stats */}
-            <div className="grid md:grid-cols-4 gap-6 mb-8">
+            <div className="grid md:grid-cols-4 gap-1.5 mb-8">
               <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400">
                   {uptimeData.overallUptime.toFixed(2)}%
@@ -1182,7 +1182,7 @@ export default function UptimePage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para monitoramento eficaz">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Activity className="h-5 w-5 mr-2 text-green-500" />

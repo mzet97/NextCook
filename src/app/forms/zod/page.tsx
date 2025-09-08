@@ -255,7 +255,7 @@ export default function ZodPage() {
           title="Schema Básico"
           description="Validação básica com tipos primitivos"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <div className="space-y-4">
                 <button
@@ -305,7 +305,7 @@ if (result.success) {
           title="Schema Avançado"
           description="Validação complexa com regex, refinements e validação cruzada"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <button
                 onClick={validateAdvanced}
@@ -352,7 +352,7 @@ if (result.success) {
           title="Transformações"
           description="Parsing e transformação de dados durante a validação"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <button
                 onClick={testTransformation}
@@ -395,7 +395,7 @@ if (result.success) {
           title="Discriminated Unions"
           description="Validação de diferentes tipos baseados em um discriminador"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="space-y-4">
               <button
                 onClick={() => validatePayment('credit_card')}
@@ -452,7 +452,7 @@ if (result.success) {
           title="Recursos do Zod"
           description="Principais funcionalidades e vantagens"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Type Safety</h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">

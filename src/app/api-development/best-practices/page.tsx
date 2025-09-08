@@ -139,7 +139,7 @@ export default function BestPracticesPage() {
         </motion.div>
 
         <DemoSection title="Princípios REST">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {restPrinciples.map((principle, index) => {
               const IconComponent = principle.icon;
               return (
@@ -172,7 +172,7 @@ export default function BestPracticesPage() {
         </DemoSection>
 
         <DemoSection title="Design de URLs RESTful">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">✅ Boas Práticas</h3>
               <div className="space-y-4">
@@ -274,7 +274,7 @@ PUT /api/users/123/activate # Usar PATCH`}
         </DemoSection>
 
         <DemoSection title="Padrões de Design">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {designPatterns.map((pattern, index) => {
               const IconComponent = pattern.icon;
               return (
@@ -297,7 +297,7 @@ PUT /api/users/123/activate # Usar PATCH`}
         </DemoSection>
 
         <DemoSection title="Versionamento de API">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Estratégias de Versionamento</h3>
               <div className="space-y-4">
@@ -428,7 +428,7 @@ export const GET = withVersioning({
         </DemoSection>
 
         <DemoSection title="Paginação e Filtros">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Paginação Eficiente</h3>
               <CodeBlock
@@ -588,7 +588,7 @@ export async function GET(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Performance e Otimização">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {performanceTips.map((tip, index) => {
               const IconComponent = tip.icon;
               return (
@@ -609,7 +609,7 @@ export async function GET(request: NextRequest) {
             })}
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Cache Headers</h3>
               <CodeBlock
@@ -745,7 +745,7 @@ export async function getUserWithLazyLoading(id: number) {
         </DemoSection>
 
         <DemoSection title="Documentação de API">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">OpenAPI/Swagger</h3>
               <CodeBlock
@@ -1054,7 +1054,7 @@ export default function DocsPage() {
         </DemoSection>
 
         <DemoSection title="Segurança e Monitoramento">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Headers de Segurança</h3>
               <CodeBlock
@@ -1229,7 +1229,7 @@ export async function GET() {
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
             <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-4">📋 Checklist Completo</h3>
             
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-3">🏗️ Design & Arquitetura</h4>
                 <ul className="space-y-1 text-blue-600 dark:text-blue-400 text-sm">

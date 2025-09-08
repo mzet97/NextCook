@@ -189,7 +189,7 @@ function RouteHandlerDemo() {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
         <div>
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">Endpoint</h3>
           <div className="space-y-2">
@@ -923,7 +923,7 @@ export async function GET(request: NextRequest) {
             title="Recursos das API Routes"
             description="Funcionalidades avançadas para APIs modernas"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {apiFeatures.map((feature) => (
                 <div key={feature.feature} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
                   <div className="flex items-center space-x-3 mb-4">

@@ -203,7 +203,7 @@ export default function TRPCPage() {
 
         {/* Features */}
         <DemoSection title="Por que tRPC?" description="As vantagens de APIs type-safe">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {trpcFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -234,7 +234,7 @@ export default function TRPCPage() {
 
         {/* Procedure Types */}
         <DemoSection title="Tipos de Procedures" description="Diferentes tipos de operações no tRPC">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {procedureTypes.map((type, index) => (
               <motion.div
                 key={type.name}
@@ -289,7 +289,7 @@ export default function TRPCPage() {
             
             <div className="p-6">
               {selectedTab === 'setup' && (
-                <div className="grid lg:grid-cols-2 gap-6">
+                <div className="grid lg:grid-cols-2 gap-1.5">
                   <div>
                     <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Instalação</h3>
                     <CodeBlock
@@ -624,7 +624,7 @@ export function useUser(id: string) {
 
         {/* Interactive Demo */}
         <DemoSection title="Demo Interativo" description="Teste as operações tRPC">
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Operações Disponíveis</h3>
               <div className="space-y-3">
@@ -738,7 +738,7 @@ createUser.mutate({
 
         {/* Advanced Features */}
         <DemoSection title="Recursos Avançados" description="Funcionalidades poderosas do tRPC">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Error Handling" description="Tratamento de erros tipado">
               <CodeBlock
                 language="typescript"
@@ -906,7 +906,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar tRPC eficientemente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Code className="h-5 w-5 mr-2 text-blue-500" />

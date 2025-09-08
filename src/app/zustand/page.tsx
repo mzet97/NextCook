@@ -268,7 +268,7 @@ export default function ZustandPage() {
 
         {/* Quick Demo */}
         <DemoSection title="Demonstração Rápida" description="Teste as funcionalidades básicas do Zustand">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             <CounterDemo />
             <UserDemo />
             <TodoDemo />
@@ -278,7 +278,7 @@ export default function ZustandPage() {
 
         {/* Introduction */}
         <DemoSection title="Por que Zustand?" description="Vantagens sobre outras soluções">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             <div className="p-6 bg-white dark:bg-gray-800 rounded-lg border">
               <div className="text-3xl mb-4">🚀</div>
               <h3 className="text-xl font-semibold mb-2">Simples</h3>
@@ -352,7 +352,7 @@ function Counter() {
 
         {/* Features */}
         <DemoSection title="Recursos Principais" description="O que o Zustand oferece">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">✅ Características</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">

@@ -138,7 +138,7 @@ export default function TailwindPage() {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-6">
                   Sistema de Espaçamento
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
                   {spacingExamples.map((spacing) => (
                     <div key={spacing.label} className="text-center">
                       <div className={`${spacing.class} rounded-lg mb-2 flex items-center justify-center text-gray-700 dark:text-gray-300 font-mono text-sm`}>
@@ -196,7 +196,7 @@ export default function TailwindPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-1.5">
             {tailwindFeatures.map((feature) => (
               <div key={feature.title} className="transform hover:scale-105 transition-transform duration-200">
                 <DemoCard {...feature} />

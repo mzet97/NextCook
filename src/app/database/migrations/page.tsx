@@ -688,7 +688,7 @@ export default function MigrationsPage() {
         {activeTab === 'overview' && (
           <>
             {/* Topics Overview */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
               {migrationTopics.map((topic, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <div className="flex items-center mb-4">
@@ -778,7 +778,7 @@ export default function MigrationsPage() {
         )}
 
         {activeTab === 'practices' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {bestPractices.map((practice, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center mb-4">
@@ -803,7 +803,7 @@ export default function MigrationsPage() {
         <div className="mt-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-xl p-8 text-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-6 text-center">Comandos Essenciais</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
               <div className="bg-black/20 rounded-lg p-4">
                 <h3 className="font-semibold mb-2">🚀 Desenvolvimento</h3>
                 <code className="text-sm block space-y-1">

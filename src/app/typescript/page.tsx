@@ -144,7 +144,7 @@ export default function TypeScriptPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {typeFeatures.map((feature) => (
               <div key={feature.title} className="text-center">
                 <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
@@ -221,7 +221,7 @@ export default function TypeScriptPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             {typescriptFeatures.map((feature) => (
               <div key={feature.title} className="transform hover:scale-105 transition-transform duration-200">
                 <DemoCard {...feature} />
@@ -243,7 +243,7 @@ export default function TypeScriptPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-4">
                 ✅ Faça

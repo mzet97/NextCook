@@ -23,7 +23,7 @@ export default function ShadcnUIPage() {
 
         {/* Installation */}
         <DemoSection title="Instalação" description="Como começar com Shadcn/ui">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Inicializar Projeto" description="Setup inicial do Shadcn/ui">
               <CodeBlock
                 language="bash"
@@ -65,7 +65,7 @@ npx shadcn-ui@latest add label`}
 
         {/* Features */}
         <DemoSection title="Características" description="Por que usar Shadcn/ui">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <Package className="h-8 w-8 text-blue-600 dark:text-blue-400 mb-4" />
               <h3 className="text-lg font-semibold mb-2">Copy & Paste</h3>
@@ -126,7 +126,7 @@ export function ButtonDemo() {
         {/* Benefits */}
         <DemoSection title="Vantagens" description="Por que escolher Shadcn/ui">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   ✅ Prós

@@ -102,7 +102,7 @@ export default function MiddlewarePage() {
         </motion.div>
 
         <DemoSection title="Tipos de Middleware">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {middlewareTypes.map((middleware, index) => {
               const IconComponent = middleware.icon;
               return (
@@ -125,7 +125,7 @@ export default function MiddlewarePage() {
         </DemoSection>
 
         <DemoSection title="Middleware Global - middleware.ts">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração Básica</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -262,7 +262,7 @@ export async function middleware(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Middleware de Autenticação">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">JWT Authentication</h3>
               <CodeBlock
@@ -409,7 +409,7 @@ async function renewSession(sessionId: string) {
         </DemoSection>
 
         <DemoSection title="CORS Middleware">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Configuração Básica</h3>
               <CodeBlock
@@ -537,7 +537,7 @@ export async function middleware(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Rate Limiting">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Rate Limiting Simples</h3>
               <CodeBlock
@@ -706,7 +706,7 @@ export async function middleware(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Logging Middleware">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Request Logging</h3>
               <CodeBlock
@@ -847,7 +847,7 @@ async function logError(errorData: any) {
         </DemoSection>
 
         <DemoSection title="Headers de Segurança">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Headers Essenciais</h3>
               <div className="space-y-4">

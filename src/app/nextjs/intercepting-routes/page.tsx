@@ -439,7 +439,7 @@ function InterceptingDemo() {
           Demonstração: {interceptingTypes.find(t => t.syntax === selectedType)?.name}
         </h3>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
           {/* Estrutura de Arquivos */}
           <div>
             <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-3">Estrutura:</h4>
@@ -605,7 +605,7 @@ function UseCasesDemo() {
           Caso de Uso: {useCases.find(u => u.id === activeUseCase)?.title}
         </h3>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
           <div>
             <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Comportamento:</h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
@@ -671,7 +671,7 @@ export default function InterceptingRoutesPage() {
             title="Tipos de Intercepting Routes"
             description="Entenda as diferentes sintaxes e quando usar cada uma"
           >
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-1.5">
               {interceptingTypes.map((type) => (
                 <div key={type.syntax} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
                   <div className="flex items-center space-x-3 mb-4">

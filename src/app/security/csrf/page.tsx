@@ -415,7 +415,7 @@ export default function CSRFPage() {
         {/* CSRF Demo */}
         <DemoSection title="Demo Interativa" description="Simule proteção CSRF em tempo real">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   Token CSRF Simulado
@@ -525,7 +525,7 @@ export default function CSRFPage() {
 
         {/* CSRF Methods */}
         <DemoSection title="Métodos de Proteção" description="Diferentes abordagens para prevenir ataques CSRF">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             {csrfMethods.map((method, index) => (
               <motion.div
                 key={method.name}
@@ -617,7 +617,7 @@ export default function CSRFPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                     {vulnerabilityExamples[selectedVulnerability].title}
@@ -710,7 +710,7 @@ export default function CSRFPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementação segura">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-red-500" />

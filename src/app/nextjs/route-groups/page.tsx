@@ -668,7 +668,7 @@ function RouteGroupDemo() {
 
 function BenefitsDemo() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
       {routeGroupBenefits.map((benefit, index) => (
         <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
           <div className="flex items-center space-x-3 mb-4">

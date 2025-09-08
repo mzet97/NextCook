@@ -344,7 +344,7 @@ export default function UtilitiesPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 max-w-6xl mx-auto">
+        <div className="grid gap-1.5 max-w-6xl mx-auto">
           <GridDemo />
           <FlexboxDemo />
           <SpacingDemo />

@@ -54,7 +54,7 @@ module.exports = {
         </div>
         
         {/* Demonstração visual dos temas */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-1.5">
           {/* Light Theme Preview */}
           <div className="bg-white border border-gray-200 rounded-lg p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">🌞 Tema Claro</h3>
@@ -447,7 +447,7 @@ export default function ThemesPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 max-w-6xl mx-auto">
+        <div className="grid gap-1.5 max-w-6xl mx-auto">
           <DarkLightModeDemo />
           <CustomColorPaletteDemo />
           <TypographyThemeDemo />

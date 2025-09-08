@@ -360,13 +360,13 @@ export default function ZustandMiddlewarePage() {
         </div>
 
         {/* Middleware Demos */}
-        <div className="grid gap-8 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid gap-1.5 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <PersistDemo />
             <DevToolsDemo />
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <AutoRemoveDemo />
             <ComplexStateDemo />
           </div>
@@ -456,7 +456,7 @@ export const useCounterStore = create<CounterState>()(
 
         {/* Features */}
         <DemoSection title="Recursos dos Middlewares" description="O que cada middleware oferece">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             <div className="p-6 bg-white dark:bg-gray-800 rounded-lg border">
               <div className="text-3xl mb-4">💾</div>
               <h3 className="text-lg font-semibold mb-2">Persist</h3>

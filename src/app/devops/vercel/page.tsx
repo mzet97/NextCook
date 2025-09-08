@@ -379,7 +379,7 @@ export default function VercelPage() {
 
         {/* Features */}
         <DemoSection title="Por que Vercel?" description="Recursos que fazem a diferença">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {vercelFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -411,7 +411,7 @@ export default function VercelPage() {
         {/* Deployment Flow */}
         <DemoSection title="Fluxo de Deploy" description="Como funciona o deploy no Vercel">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-1.5">
               {deploymentFlow.map((step, index) => {
                 const Icon = step.icon;
                 return (
@@ -455,7 +455,7 @@ export default function VercelPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Primeiros passos com Vercel">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Instalação" description="Instalar Vercel CLI">
               <CodeBlock
                 language="bash"
@@ -663,7 +663,7 @@ vercel env pull .env.local`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Vercel eficientemente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Zap className="h-5 w-5 mr-2 text-yellow-500" />

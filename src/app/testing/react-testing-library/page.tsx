@@ -436,7 +436,7 @@ export default function ReactTestingLibraryPage() {
 
         {/* RTL Principles */}
         <DemoSection title="Princípios Fundamentais" description="Filosofia do React Testing Library">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {rtlPrinciples.map((principle, index) => {
               const Icon = principle.icon;
               return (
@@ -457,7 +457,7 @@ export default function ReactTestingLibraryPage() {
 
         {/* Query Priority */}
         <DemoSection title="Prioridade de Seletores" description="Ordem recomendada para encontrar elementos">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="🥇 Prioridade Alta" description="Acessíveis para todos os usuários">
               <div className="space-y-3">
                 {[
@@ -600,7 +600,7 @@ export default function ReactTestingLibraryPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para testes eficazes com RTL">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Faça" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[
@@ -645,7 +645,7 @@ export default function ReactTestingLibraryPage() {
 
         {/* Useful Utilities */}
         <DemoSection title="Utilitários Úteis" description="Helpers e configurações importantes">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Custom Render" description="Helper para renderizar com providers">
               <CodeBlock
                 language="typescript"

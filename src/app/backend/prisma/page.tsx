@@ -144,7 +144,7 @@ export default function PrismaPage() {
 
         {/* Features */}
         <DemoSection title="Características Principais" description="Por que escolher Prisma para seu projeto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {prismaFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -170,7 +170,7 @@ export default function PrismaPage() {
 
         {/* Installation & Setup */}
         <DemoSection title="Instalação e Configuração" description="Como começar com Prisma em seu projeto">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Instalação" description="Instalar Prisma e dependências">
               <CodeBlock
                 language="bash"
@@ -371,7 +371,7 @@ model Post {
 
         {/* Database Providers */}
         <DemoSection title="Provedores de Banco de Dados" description="Suporte multi-database do Prisma">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {databaseProviders.map((provider, index) => (
               <motion.div
                 key={provider.name}
@@ -411,7 +411,7 @@ model Post {
 
         {/* Interactive Query Examples */}
         <DemoSection title="Exemplos de Queries" description="Teste diferentes operações do Prisma Client">
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 gap-1.5">
             {/* Query Buttons */}
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Operações CRUD</h3>
@@ -536,7 +536,7 @@ const newUser = await prisma.user.create({
 
         {/* Advanced Features */}
         <DemoSection title="Recursos Avançados" description="Funcionalidades poderosas do Prisma">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Transactions" description="Operações atômicas e consistentes">
               <CodeBlock
                 language="typescript"
@@ -665,7 +665,7 @@ npx prisma studio
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Prisma eficientemente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Zap className="h-5 w-5 mr-2 text-yellow-500" />

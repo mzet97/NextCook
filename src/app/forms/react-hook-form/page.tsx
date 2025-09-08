@@ -111,7 +111,7 @@ export default function ReactHookFormPage() {
           title="Formulário Básico"
           description="Exemplo básico com validação e estados de loading"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitBasic(onSubmitBasic)} className="space-y-4">
                 <div>
@@ -231,7 +231,7 @@ const onSubmit = async (data: FormData) => {
           title="Formulário Dinâmico"
           description="Adicionando e removendo campos dinamicamente com useFieldArray"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitDynamic(onSubmitDynamic)} className="space-y-4">
                 <div>
@@ -335,7 +335,7 @@ const { fields, append, remove } = useFieldArray({
           title="Formulário Condicional"
           description="Campos condicionais baseados em outros valores usando watch"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitConditional(onSubmitConditional)} className="space-y-4">
                 <div>
@@ -465,7 +465,7 @@ const userType = watch('userType');
           title="Recursos do React Hook Form"
           description="Principais funcionalidades e vantagens"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Performance</h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">

@@ -496,7 +496,7 @@ export default function LucideIconsPage() {
         </motion.div>
 
         <DemoSection title="Características Principais">
-          <div className="grid md:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-4 gap-1.5 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg text-center">
               <Package className="h-8 w-8 text-blue-500 mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-blue-900 mb-2">1000+ Ícones</h3>
@@ -544,7 +544,7 @@ export default function LucideIconsPage() {
         </DemoSection>
 
         <DemoSection title="Customização">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Tamanhos" description="Diferentes tamanhos disponíveis">
               <IconSizes />
             </DemoCardStatic>
@@ -568,7 +568,7 @@ export default function LucideIconsPage() {
         </DemoSection>
 
         <DemoSection title="Instalação e Uso">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação" description="Adicione Lucide Icons ao seu projeto">
               <CodeBlock
                 language="bash"
@@ -604,7 +604,7 @@ function App() {
         </DemoSection>
 
         <DemoSection title="Customização Avançada">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Props Disponíveis" description="Todas as opções de customização">
               <CodeBlock
                 language="typescript"
@@ -659,7 +659,7 @@ function App() {
         </DemoSection>
 
         <DemoSection title="Melhores Práticas">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Acessibilidade" description="Torne seus ícones acessíveis">
               <CodeBlock
                 language="typescript"
@@ -710,7 +710,7 @@ const MemoizedIcon = memo(() => <Home className="h-5 w-5" />);`}
         </DemoSection>
 
         <DemoSection title="Vantagens do Lucide Icons">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-green-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-green-900 mb-2">🎯 Qualidade</h3>
               <p className="text-green-800">
@@ -805,7 +805,7 @@ function App() {
       
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
           {/* Card Example */}
           <div className="bg-white rounded-lg shadow p-6">
             <div className="flex items-center justify-between mb-4">

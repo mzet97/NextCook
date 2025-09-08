@@ -71,7 +71,7 @@ export default function RouteHandlersPage() {
         </motion.div>
 
         <DemoSection title="Características dos Route Handlers">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {routeFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
@@ -94,7 +94,7 @@ export default function RouteHandlersPage() {
         </DemoSection>
 
         <DemoSection title="Estrutura Básica">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Arquivo route.ts</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -241,7 +241,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Rotas Dinâmicas">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Parâmetros de Rota</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -330,7 +330,7 @@ export async function GET(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Headers e Cookies">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Lendo Headers</h3>
               <CodeBlock
@@ -391,7 +391,7 @@ export async function GET(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Melhores Práticas">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {bestPractices.map((practice, index) => {
               const IconComponent = practice.icon;
               return (
@@ -427,7 +427,7 @@ export async function GET(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Streaming e Server-Sent Events">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Streaming Response</h3>
               <CodeBlock

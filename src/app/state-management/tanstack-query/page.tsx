@@ -400,7 +400,7 @@ function TanStackQueryContent() {
         </div>
 
         <DemoSection title="Conceitos Fundamentais">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="useQuery" description="Buscar e cachear dados">
               <CodeBlock
                 language="typescript"
@@ -431,7 +431,7 @@ function TanStackQueryContent() {
         </DemoSection>
 
         <DemoSection title="Exemplos Práticos">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Query Básica" description="Buscar lista de usuários">
               <BasicQuery />
             </DemoCardStatic>
@@ -441,7 +441,7 @@ function TanStackQueryContent() {
             </DemoCardStatic>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Mutations" description="Criar e atualizar dados">
               <MutationExample />
             </DemoCardStatic>
@@ -459,7 +459,7 @@ function TanStackQueryContent() {
         </DemoSection>
 
         <DemoSection title="Recursos Avançados">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">🗄️ Caching</h3>
               <p className="text-blue-800 text-sm mb-3">
@@ -507,7 +507,7 @@ refetchInterval: 30000`}
         </DemoSection>
 
         <DemoSection title="Vantagens do TanStack Query">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-yellow-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-yellow-900 mb-2">⚡ Performance</h3>
               <p className="text-yellow-800">

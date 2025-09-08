@@ -261,7 +261,7 @@ export default function DashboardLoading() {
           </DemoSection>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
           <DemoSection title="Posts Recentes">
             <Suspense fallback={<PostsSkeleton />}>
               <RecentPosts />
@@ -275,7 +275,7 @@ export default function DashboardLoading() {
           </DemoSection>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5 mb-12">
           <DemoSection title="Componente Rápido">
             <Suspense fallback={<div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg animate-pulse">Carregando...</div>}>
               <SlowComponent delay={500} name="Componente Rápido" />
@@ -305,7 +305,7 @@ export default function DashboardLoading() {
           <CodeBlock code={loadingCode} language="tsx" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5 mb-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🌊 Como funciona o Streaming</h2>
             <div className="space-y-4">
@@ -357,7 +357,7 @@ export default function DashboardLoading() {
 
         <div className="bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-xl p-8">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🎯 Estratégias de Streaming</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">Por Prioridade</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">

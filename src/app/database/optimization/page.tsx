@@ -1079,7 +1079,7 @@ export default function OptimizationPage() {
         {activeTab === 'overview' && (
           <>
             {/* Topics Overview */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
               {optimizationTopics.map((topic, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <div className="flex items-center mb-4">
@@ -1105,7 +1105,7 @@ export default function OptimizationPage() {
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Impacto na Performance</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
                 <div className="text-center p-6 bg-green-50 rounded-lg">
                   <TrendingUp className="w-8 h-8 text-green-600 mx-auto mb-3" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Índices Otimizados</h3>
@@ -1171,7 +1171,7 @@ export default function OptimizationPage() {
         )}
 
         {activeTab === 'metrics' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {performanceMetrics.map((metric, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center justify-between mb-4">
@@ -1197,7 +1197,7 @@ export default function OptimizationPage() {
         )}
 
         {activeTab === 'tips' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {optimizationTips.map((category, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{category.category}</h3>
@@ -1218,7 +1218,7 @@ export default function OptimizationPage() {
         <div className="mt-12 bg-gradient-to-r from-yellow-600 to-orange-600 rounded-xl p-8 text-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-6 text-center">Checklist de Performance</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
               <div className="space-y-3">
                 <h3 className="font-semibold mb-3">✅ Essenciais</h3>
                 <div className="space-y-2 text-sm">

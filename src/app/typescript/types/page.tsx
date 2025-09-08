@@ -632,7 +632,7 @@ export default function TypeScriptTypesPage() {
 
         {/* Tipos Fundamentais */}
         <DemoSection title="Tipos Fundamentais">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <BasicTypesDemo />
             <UnionTypesDemo />
           </div>
@@ -640,7 +640,7 @@ export default function TypeScriptTypesPage() {
 
         {/* Utility Types */}
         <DemoSection title="Utility Types">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <UtilityTypesDemo />
             <div className="space-y-6">
               <CodeBlock
@@ -676,7 +676,7 @@ type UserReadonly = Readonly<User>;
 
         {/* Generic Types */}
         <DemoSection title="Generic Types">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <GenericTypesDemo />
             <div className="space-y-6">
               <CodeBlock
@@ -713,7 +713,7 @@ type ArrayElement<T> = T extends (infer U)[] ? U : never;`}
 
         {/* Type Guards */}
         <DemoSection title="Type Guards">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <TypeGuardsDemo />
             <div className="space-y-6">
               <CodeBlock
@@ -766,7 +766,7 @@ function processValue(value: unknown) {
 
         {/* Discriminated Unions */}
         <DemoSection title="Discriminated Unions">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <DiscriminatedUnionsDemo />
             <div className="space-y-6">
               <CodeBlock
@@ -810,7 +810,7 @@ function handleState(state: AsyncState) {
 
         {/* Advanced Types */}
         <DemoSection title="Tipos Avançados">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="space-y-6">
               <CodeBlock
                 title="Template Literal Types"
@@ -922,7 +922,7 @@ type UserPaths = Paths<User>;
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 ✅ Boas Práticas

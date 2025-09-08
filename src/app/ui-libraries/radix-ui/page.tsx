@@ -398,7 +398,7 @@ export default function RadixUIPage() {
         </motion.div>
 
         <DemoSection title="Características Principais">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-purple-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-purple-900 mb-2">🎯 Headless</h3>
               <p className="text-purple-800">
@@ -423,7 +423,7 @@ export default function RadixUIPage() {
         </DemoSection>
 
         <DemoSection title="Componentes em Ação">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Dialog" description="Modal acessível com overlay">
               <DialogDemo />
             </DemoCardStatic>
@@ -459,7 +459,7 @@ export default function RadixUIPage() {
         </DemoSection>
 
         <DemoSection title="Instalação e Uso">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação" description="Instale apenas os componentes que você precisa">
               <CodeBlock
                 language="bash"
@@ -568,7 +568,7 @@ function MyDialog() {
         </DemoSection>
 
         <DemoSection title="Recursos Avançados">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-yellow-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-yellow-900 mb-2">🎨 Data Attributes</h3>
               <p className="text-yellow-800 text-sm mb-3">
@@ -617,7 +617,7 @@ function MyDialog() {
         </DemoSection>
 
         <DemoSection title="Vantagens do Radix UI">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-green-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-green-900 mb-2">🎯 Flexibilidade Total</h3>
               <p className="text-green-800">

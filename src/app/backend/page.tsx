@@ -230,7 +230,7 @@ export default function BackendPage() {
         {/* Featured Technologies */}
         <DemoSection title="Tecnologias em Destaque" description="As principais ferramentas para desenvolvimento backend moderno">
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -306,7 +306,7 @@ export default function BackendPage() {
 
         {/* Backend Concepts */}
         <DemoSection title="Conceitos Fundamentais" description="Princípios essenciais para desenvolvimento backend">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {backendConcepts.map((concept, index) => (
               <motion.div
                 key={concept.title}
@@ -334,7 +334,7 @@ export default function BackendPage() {
 
         {/* Architecture Patterns */}
         <DemoSection title="Padrões de Arquitetura" description="Diferentes abordagens para estruturar aplicações backend">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {architecturePatterns.map((pattern, index) => (
               <motion.div
                 key={pattern.name}
@@ -461,7 +461,7 @@ export default function BackendPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Guia rápido para desenvolvimento backend">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Setup Inicial" description="Configuração básica do ambiente">
               <CodeBlock
                 language="bash"
@@ -512,7 +512,7 @@ npx prisma init`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para desenvolvimento backend de qualidade">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-green-500" />

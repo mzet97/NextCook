@@ -553,7 +553,7 @@ export default function StorybookPage() {
 
         {/* Storybook Principles */}
         <DemoSection title="Conceitos Fundamentais" description="Princípios do desenvolvimento com Storybook">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {storybookPrinciples.map((principle, index) => {
               const Icon = principle.icon;
               return (
@@ -573,7 +573,7 @@ export default function StorybookPage() {
 
         {/* Story Structure */}
         <DemoSection title="Anatomia de uma Story" description="Estrutura e organização de stories">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="📁 Organização" description="Estrutura de arquivos">
               <div className="space-y-3">
                 <div className="bg-gray-50 dark:bg-gray-700 p-3 rounded font-mono text-sm">
@@ -759,7 +759,7 @@ export default function StorybookPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Storybook efetivamente">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Faça" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[
@@ -804,7 +804,7 @@ export default function StorybookPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial do Storybook">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação" description="Setup inicial do projeto">
               <CodeBlock
                 language="bash"

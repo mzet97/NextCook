@@ -112,7 +112,7 @@ export default function ValidationPage() {
         </motion.div>
 
         <DemoSection title="Por que usar Zod?">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {validationFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
@@ -135,7 +135,7 @@ export default function ValidationPage() {
         </DemoSection>
 
         <DemoSection title="Instalação e Setup">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Instalação</h3>
               <CodeBlock
@@ -181,7 +181,7 @@ if (result.success) {
         </DemoSection>
 
         <DemoSection title="Tipos Básicos do Zod">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Tipos Primitivos</h3>
               <div className="space-y-4">
@@ -249,7 +249,7 @@ const idSchema = z.string()
         </DemoSection>
 
         <DemoSection title="Schemas Complexos">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Objetos Aninhados</h3>
               <CodeBlock
@@ -370,7 +370,7 @@ const ProductSchema = z.object({
         </DemoSection>
 
         <DemoSection title="Validação em Route Handlers">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">POST - Criar Usuário</h3>
               <CodeBlock
@@ -549,7 +549,7 @@ export async function PUT(
         </DemoSection>
 
         <DemoSection title="Validação de Query Parameters">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Paginação e Filtros</h3>
               <CodeBlock
@@ -731,7 +731,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Validações Customizadas">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Validadores Personalizados</h3>
               <CodeBlock
@@ -908,7 +908,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Transformações de Dados">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Transformações Básicas</h3>
               <CodeBlock
@@ -1069,7 +1069,7 @@ const ConditionalSchema = z.object({
         </DemoSection>
 
         <DemoSection title="Tratamento de Erros">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Formatação de Erros</h3>
               <CodeBlock

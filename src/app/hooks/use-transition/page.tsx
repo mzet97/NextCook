@@ -129,7 +129,7 @@ export default function UseTransitionPage() {
 
         {/* Conceito Básico */}
         <DemoSection title="Conceito Básico">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="space-y-6">
               <div className="card">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
@@ -217,7 +217,7 @@ function updateData(newData) {
 
         {/* Demonstração Prática */}
         <DemoSection title="Demonstração Prática - Filtro de Lista">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 Lista com useTransition
@@ -307,7 +307,7 @@ return (
 
         {/* Navegação com Transições */}
         <DemoSection title="Navegação com Transições">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 Tabs com useTransition
@@ -396,7 +396,7 @@ return (
 
         {/* Busca com Transição */}
         <DemoSection title="Busca com Transição">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 Busca Assíncrona
@@ -440,7 +440,7 @@ return (
 
         {/* Melhores Práticas */}
         <DemoSection title="Melhores Práticas">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 ✅ Use useTransition para:
@@ -473,7 +473,7 @@ return (
 
         {/* Comparação */}
         <DemoSection title="useTransition vs useDeferredValue">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 useTransition

@@ -135,9 +135,18 @@ const megaMenuCategories: MegaMenuCategory[] = [
       { name: 'Radix UI', href: '/ui-libraries/radix-ui', description: 'Primitivos acessíveis' },
       { name: 'Framer Motion', href: '/ui-libraries/framer-motion', description: 'Animações' },
       { name: 'Lucide Icons', href: '/ui-libraries/lucide-icons', description: 'Ícones SVG' },
+      { name: 'Material-UI', href: '/ui-libraries/mui', description: 'Componentes Material Design' },
       { name: 'Forms', href: '/forms', description: 'React Hook Form + Zod' },
       { name: 'State Management', href: '/state-management', description: 'Gerenciamento de estado' },
-      { name: 'Zustand', href: '/zustand', description: 'State simples' }
+      { name: 'Redux Toolkit', href: '/state-management/redux-toolkit', description: 'Estado global com Redux' },
+      { name: 'Jotai', href: '/state-management/jotai', description: 'Estado atômico' },
+      { name: 'TanStack Query', href: '/state-management/tanstack-query', description: 'Estado de servidor' },
+      { name: 'Valtio', href: '/state-management/valtio', description: 'Estado proxy' },
+      { name: 'Zustand', href: '/zustand', description: 'State simples' },
+      { name: 'Zustand Basic', href: '/zustand/basic', description: 'Uso básico do Zustand' },
+      { name: 'Zustand Composition', href: '/zustand/composition', description: 'Composição de stores' },
+      { name: 'Zustand Middleware', href: '/zustand/middleware', description: 'Middleware do Zustand' },
+      { name: 'Zustand Patterns', href: '/zustand/patterns', description: 'Padrões avançados' }
     ]
   },
   {
@@ -397,13 +406,13 @@ export default function Navigation() {
                         </div>
 
                         {/* Categories Grid */}
-                        <div className="grid grid-cols-4 gap-6">
+                        <div className="grid grid-cols-4 gap-1.5">
                              {megaMenuCategories.map((category, categoryIndex) => {
                                const IconComponent = category.icon;
                                return (
                                  <motion.div 
                                    key={category.id} 
-                                   className="space-y-3 p-4 rounded-xl hover:bg-gray-50/50 dark:hover:bg-gray-800/50 transition-all duration-300 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-lg" 
+                                   className="space-y-2 p-3 rounded-xl hover:bg-gray-50/50 dark:hover:bg-gray-800/50 transition-all duration-300 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-lg" 
                                    role="group" 
                                    aria-labelledby={`category-${category.id}`}
                                    initial={{ opacity: 0, y: 20 }}
@@ -413,7 +422,7 @@ export default function Navigation() {
                                  >
                                  {/* Category Header */}
                                  <motion.div 
-                                    className="flex items-center space-x-2 mb-3 group cursor-pointer"
+                                    className="flex items-center space-x-2 mb-2 group cursor-pointer"
                                     whileHover={{ scale: 1.02 }}
                                     transition={{ duration: 0.2 }}
                                   >
@@ -432,7 +441,7 @@ export default function Navigation() {
 
                                 {/* Category Items */}
                                 <div className="space-y-1">
-                                  {category.items.slice(0, 6).map((item, index) => (
+                                  {category.items.map((item, index) => (
                                      <motion.div
                                        key={item.href}
                                        initial={{ opacity: 0, x: -10 }}
@@ -453,11 +462,6 @@ export default function Navigation() {
                                        </Link>
                                      </motion.div>
                                    ))}
-                                  {category.items.length > 6 && (
-                                    <div className="text-xs text-gray-500 dark:text-gray-400 px-3 py-1">
-                                      +{category.items.length - 6} mais...
-                                    </div>
-                                  )}
                                 </div>
                                </motion.div>
                             );
@@ -607,7 +611,7 @@ export default function Navigation() {
                         </div>
                       </div>
                       <div className="ml-6 space-y-1">
-                        {category.items.slice(0, 4).map((item) => (
+                        {category.items.map((item) => (
                           <Link
                             key={item.href}
                             href={item.href}
@@ -617,11 +621,6 @@ export default function Navigation() {
                             {item.name}
                           </Link>
                         ))}
-                        {category.items.length > 4 && (
-                          <div className="text-xs text-gray-500 dark:text-gray-400 px-3 py-1">
-                            +{category.items.length - 4} mais...
-                          </div>
-                        )}
                       </div>
                     </div>
                   );

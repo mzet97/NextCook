@@ -127,7 +127,7 @@ export default function NextjsImagesPage() {
 
         {/* Optimization Features */}
         <DemoSection title="Recursos de Otimização">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             {optimizationFeatures.map((feature, index) => (
               <div key={feature.title} className="card hover:shadow-lg transition-shadow duration-200">
                 <div className="flex items-start space-x-4">
@@ -167,7 +167,7 @@ export default function NextjsImagesPage() {
             </div>
 
             {/* Selected Example */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               {/* Demo */}
               <div className="card">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
@@ -195,7 +195,7 @@ export default function NextjsImagesPage() {
 
         {/* Advanced Configuration */}
         <DemoSection title="Configuração Avançada">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="space-y-6">
               <div className="card">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
@@ -267,7 +267,7 @@ module.exports = nextConfig`}
 
         {/* Performance Tips */}
         <DemoSection title="Dicas de Performance">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 ✅ Boas Práticas

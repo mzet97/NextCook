@@ -235,7 +235,7 @@ export default function AdvancedPage() {
         {/* Featured Technologies */}
         <DemoSection title="Recursos Avançados" description="Funcionalidades para aplicações de próximo nível">
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -311,7 +311,7 @@ export default function AdvancedPage() {
 
         {/* Feature Concepts */}
         <DemoSection title="Conceitos Fundamentais" description="Princípios por trás dos recursos avançados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {featureConcepts.map((concept, index) => (
               <motion.div
                 key={concept.title}
@@ -339,7 +339,7 @@ export default function AdvancedPage() {
 
         {/* Implementation Strategies */}
         <DemoSection title="Estratégias de Implementação" description="Diferentes abordagens para renderização e performance">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {implementationStrategies.map((strategy, index) => (
               <motion.div
                 key={strategy.name}
@@ -444,7 +444,7 @@ export default function AdvancedPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Primeiros passos para implementar recursos avançados">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Setup Inicial" description="Configuração básica para recursos avançados">
               <CodeBlock
                 language="bash"
@@ -501,7 +501,7 @@ npm install @vercel/analytics`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementar recursos avançados">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Rocket className="h-5 w-5 mr-2 text-blue-500" />

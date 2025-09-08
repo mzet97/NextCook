@@ -705,7 +705,7 @@ export default function AnalyticsPage() {
 
         {/* Analytics Features */}
         <DemoSection title="Recursos de Analytics" description="Funcionalidades essenciais para análise de e-commerce">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {analyticsFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -736,7 +736,7 @@ export default function AnalyticsPage() {
 
         {/* Analytics Metrics */}
         <DemoSection title="Métricas em Tempo Real" description="Dashboard com principais KPIs">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {analyticsMetrics.map((category, index) => (
               <motion.div
                 key={category.category}
@@ -871,7 +871,7 @@ export default function AnalyticsPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para analytics eficaz">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Implementar" description="Práticas essenciais de analytics">
               <div className="space-y-3">
                 {[
@@ -916,7 +916,7 @@ export default function AnalyticsPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial de analytics">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Checklist de Setup" description="Itens essenciais para implementar">
               <div className="space-y-3">
                 {[

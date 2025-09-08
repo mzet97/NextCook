@@ -346,7 +346,7 @@ export default function PlaywrightPage() {
 
         {/* Playwright Features */}
         <DemoSection title="Recursos do Playwright" description="Funcionalidades avançadas para testes E2E">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {playwrightFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -367,7 +367,7 @@ export default function PlaywrightPage() {
 
         {/* Configuration */}
         <DemoSection title="Configuração" description="Setup do Playwright para o projeto">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="playwright.config.ts" description="Configuração principal">
               <CodeBlock
                 language="typescript"
@@ -528,7 +528,7 @@ npx playwright show-report`}
 
         {/* Browser Support */}
         <DemoSection title="Suporte a Browsers" description="Testes cross-browser automatizados">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="Desktop Browsers" description="Suporte completo para desktop">
               <div className="space-y-3">
                 {[

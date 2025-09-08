@@ -795,7 +795,7 @@ function CacheDemo() {
           Estratégia: {selectedCache}
         </h3>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
           <div>
             <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Comportamento:</h4>
             <p className="text-gray-600 dark:text-gray-400">

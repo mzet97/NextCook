@@ -88,7 +88,7 @@ export default function TestingPage() {
 
         {/* Testing Pyramid */}
         <DemoSection title="Pirâmide de Testes" description="Estratégia balanceada de testes">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {Object.entries(testingPyramid).map(([key, level]) => (
               <DemoCardStatic key={key} title={level.name} description={level.description}>
                 <div className="space-y-4">
@@ -113,7 +113,7 @@ export default function TestingPage() {
 
         {/* Testing Tools */}
         <DemoSection title="Ferramentas de Teste" description="Explore cada ferramenta em detalhes">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {testingTools.map((tool) => {
               const Icon = tool.icon;
               return (
@@ -145,7 +145,7 @@ export default function TestingPage() {
 
         {/* Quick Start Guide */}
         <DemoSection title="Guia Rápido" description="Comandos essenciais para começar">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Testes Unitários" description="Jest + React Testing Library">
               <CodeBlock
                 language="bash"
@@ -185,7 +185,7 @@ npm run test:all`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para testes eficazes">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   ✅ Faça
@@ -219,7 +219,7 @@ npm run test:all`}
         {/* Coverage Goals */}
         <DemoSection title="Metas de Coverage" description="Objetivos de cobertura de código">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-1.5">
               {[
                 { metric: 'Statements', target: '80%', current: '75%' },
                 { metric: 'Branches', target: '70%', current: '68%' },

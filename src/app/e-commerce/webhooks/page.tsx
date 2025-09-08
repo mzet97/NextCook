@@ -1139,7 +1139,7 @@ export default function WebhooksPage() {
 
         {/* Features */}
         <DemoSection title="Recursos de Webhooks" description="Funcionalidades essenciais para webhooks de e-commerce">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {webhookFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -1170,7 +1170,7 @@ export default function WebhooksPage() {
 
         {/* Webhook Events */}
         <DemoSection title="Tipos de Eventos" description="Eventos de webhook suportados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {webhookEvents.map((category, index) => (
               <motion.div
                 key={category.category}
@@ -1234,7 +1234,7 @@ export default function WebhooksPage() {
 
         {/* Webhook Simulator */}
         <DemoSection title="Simulador de Webhooks" description="Teste webhooks em tempo real">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Simular Eventos" description="Envie webhooks de teste">
               <div className="space-y-4">
                 <div className="grid grid-cols-2 gap-2">
@@ -1304,7 +1304,7 @@ export default function WebhooksPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementação de webhooks">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Recomendações" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[
@@ -1349,7 +1349,7 @@ export default function WebhooksPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial de webhooks">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Configuração Inicial" description="Setup do endpoint webhook">
               <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
                 <pre className="text-green-400 text-sm">

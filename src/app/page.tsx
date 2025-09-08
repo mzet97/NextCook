@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             
             {/* Quick Stats */}
-            <div className="flex flex-wrap justify-center gap-6 mt-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <div className="flex flex-wrap justify-center gap-1.5 mt-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
               <div className="glass-effect px-4 py-2 rounded-lg text-white text-sm flex items-center">
                 <Code className="w-4 h-4 mr-2" />
                 {allTopics.length}+ Tópicos
@@ -176,7 +176,7 @@ export default function Home() {
           </div>
           
           {/* Level Indicators */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5 mb-12">
             <div className="text-center p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200 dark:border-green-800">
               <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌱</span>
@@ -242,7 +242,7 @@ export default function Home() {
                 Fundamentos
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {basicTopics.map((topic, index) => (
                 <div key={topic.title} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <DemoCard {...topic} />
@@ -262,7 +262,7 @@ export default function Home() {
                 Padrões Avançados
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {intermediateTopics.map((topic, index) => (
                 <div key={topic.title} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <DemoCard {...topic} />
@@ -282,7 +282,7 @@ export default function Home() {
                 Arquitetura Profissional
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
               {advancedTopics.map((topic, index) => (
                 <div key={topic.title} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <DemoCard {...topic} />
@@ -305,7 +305,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Code className="w-8 h-8 text-blue-600 dark:text-blue-400" />

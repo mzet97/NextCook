@@ -122,7 +122,7 @@ export default function APIRestPage() {
         </motion.div>
 
         <DemoSection title="Características Principais">
-          <div className="grid md:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-4 gap-1.5 mb-8">
             <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg text-center">
               <Zap className="h-8 w-8 text-blue-500 mx-auto mb-3" />
               <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">App Router</h3>
@@ -158,7 +158,7 @@ export default function APIRestPage() {
         </DemoSection>
 
         <DemoSection title="Tópicos de API Development">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {apiFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
@@ -182,7 +182,7 @@ export default function APIRestPage() {
         </DemoSection>
 
         <DemoSection title="Quick Start">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Passos Rápidos</h3>
               <div className="space-y-4">
@@ -274,7 +274,7 @@ lib/
         </DemoSection>
 
         <DemoSection title="Próximos Passos">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-2">🚀 Começar</h3>
               <p className="text-blue-800 dark:text-blue-200 mb-4">

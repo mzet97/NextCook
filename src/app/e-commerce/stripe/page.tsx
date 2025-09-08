@@ -1093,7 +1093,7 @@ export default function StripePage() {
         {activeTab === 'overview' && (
           <>
             {/* Features Overview */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
               {stripeFeatures.map((feature, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <div className="flex items-center mb-4">
@@ -1119,7 +1119,7 @@ export default function StripePage() {
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Passos para Integração</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-1.5">
                 {[
                   { step: '1', title: 'Configurar Conta', desc: 'Criar conta no Stripe e obter chaves API' },
                   { step: '2', title: 'Instalar SDK', desc: 'Instalar bibliotecas do Stripe' },
@@ -1179,7 +1179,7 @@ export default function StripePage() {
         )}
 
         {activeTab === 'practices' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {bestPractices.map((practice, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center mb-4">

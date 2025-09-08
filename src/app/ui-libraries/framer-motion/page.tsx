@@ -505,7 +505,7 @@ export default function FramerMotionPage() {
 
         <DemoSection title="Características Principais">
           <motion.div 
-            className="grid md:grid-cols-3 gap-6 mb-8"
+            className="grid md:grid-cols-3 gap-1.5 mb-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -575,7 +575,7 @@ export default function FramerMotionPage() {
         </DemoSection>
 
         <DemoSection title="Instalação e Setup">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação" description="Adicione Framer Motion ao seu projeto">
               <CodeBlock
                 language="bash"
@@ -612,7 +612,7 @@ function App() {
         </DemoSection>
 
         <DemoSection title="Conceitos Fundamentais">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Motion Components" description="Componentes animáveis">
               <CodeBlock
                 language="typescript"
@@ -659,7 +659,7 @@ const MotionCustom = motion(forwardRef(CustomComponent));`}
         </DemoSection>
 
         <DemoSection title="Recursos Avançados">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-yellow-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-yellow-900 mb-2">🎯 useAnimation</h3>
               <p className="text-yellow-800 text-sm mb-3">
@@ -714,7 +714,7 @@ const scale = useTransform(
         </DemoSection>
 
         <DemoSection title="Vantagens do Framer Motion">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-green-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-green-900 mb-2">⚡ Performance</h3>
               <p className="text-green-800">

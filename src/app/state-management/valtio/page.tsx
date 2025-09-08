@@ -470,7 +470,7 @@ export default function ValtioPage() {
         </div>
 
         <DemoSection title="Conceitos Fundamentais">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Proxy State" description="Estado mutável com proxies">
               <CodeBlock
                 language="typescript"
@@ -511,7 +511,7 @@ const userState = proxy({
         </DemoSection>
 
         <DemoSection title="Exemplos Práticos">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Contador com Step" description="Estado simples com múltiplas propriedades">
               <BasicCounter />
             </DemoCardStatic>
@@ -521,7 +521,7 @@ const userState = proxy({
             </DemoCardStatic>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Todo App" description="Lista dinâmica com filtros">
               <TodoApp />
             </DemoCardStatic>
@@ -533,7 +533,7 @@ const userState = proxy({
         </DemoSection>
 
         <DemoSection title="Recursos Avançados">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">📡 Subscriptions</h3>
               <p className="text-blue-800 text-sm mb-3">
@@ -582,7 +582,7 @@ subscribeKey(state, 'count', (count) => {
         </DemoSection>
 
         <DemoSection title="Vantagens do Valtio">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-yellow-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-yellow-900 mb-2">🎯 Simplicidade</h3>
               <p className="text-yellow-800">

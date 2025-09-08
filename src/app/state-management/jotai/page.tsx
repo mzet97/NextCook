@@ -262,7 +262,7 @@ export default function JotaiPage() {
         </div>
 
         <DemoSection title="Conceitos Fundamentais">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Atoms" description="Unidades básicas de estado">
               <CodeBlock
                 language="typescript"
@@ -298,7 +298,7 @@ const setCount = useSetAtom(countAtom);`}
         </DemoSection>
 
         <DemoSection title="Exemplos Práticos">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Contador Básico" description="Atom simples com derivação">
               <BasicCounter />
             </DemoCardStatic>
@@ -318,7 +318,7 @@ const setCount = useSetAtom(countAtom);`}
         </DemoSection>
 
         <DemoSection title="Recursos Avançados">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Async Atom" description="Carregamento assíncrono">
               <Suspense fallback={<div className="text-center py-4">Carregando usuário...</div>}>
                 <AsyncUser />
@@ -332,7 +332,7 @@ const setCount = useSetAtom(countAtom);`}
         </DemoSection>
 
         <DemoSection title="Vantagens do Jotai">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">🔬 Atomic</h3>
               <p className="text-blue-800">

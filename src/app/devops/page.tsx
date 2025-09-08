@@ -221,7 +221,7 @@ export default function DevOpsPage() {
         {/* Featured Tools */}
         <DemoSection title="Ferramentas Essenciais" description="As principais tecnologias para DevOps moderno">
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -297,7 +297,7 @@ export default function DevOpsPage() {
 
         {/* DevOps Concepts */}
         <DemoSection title="Conceitos Fundamentais" description="Princípios essenciais do DevOps">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {devopsConcepts.map((concept, index) => (
               <motion.div
                 key={concept.title}
@@ -326,7 +326,7 @@ export default function DevOpsPage() {
         {/* CI/CD Pipeline */}
         <DemoSection title="Pipeline CI/CD" description="Fluxo completo de integração e deploy contínuo">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-1.5">
               {cicdPipeline.map((stage, index) => (
                 <motion.div
                   key={stage.stage}
@@ -398,7 +398,7 @@ export default function DevOpsPage() {
 
         {/* Deployment Strategies */}
         <DemoSection title="Estratégias de Deploy" description="Diferentes abordagens para deploy em produção">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             {deploymentStrategies.map((strategy, index) => (
               <motion.div
                 key={strategy.name}
@@ -451,7 +451,7 @@ export default function DevOpsPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Primeiros passos para implementar DevOps">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Setup Básico" description="Configuração inicial do ambiente">
               <CodeBlock
                 language="bash"
@@ -503,7 +503,7 @@ vercel login`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para DevOps eficiente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-green-500" />

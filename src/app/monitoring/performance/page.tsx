@@ -879,7 +879,7 @@ export default function PerformancePage() {
 
         {/* Features */}
         <DemoSection title="Recursos de Monitoramento" description="Ferramentas para análise de performance">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {performanceFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -1016,7 +1016,7 @@ export default function PerformancePage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     {coreWebVitals[selectedVital].name}
@@ -1105,7 +1105,7 @@ export default function PerformancePage() {
             </div>
             
             <div className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-1.5">
                 {performanceMetrics[selectedMetricCategory].metrics.map((metric) => (
                   <div key={metric.name} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <div className="flex items-center justify-between mb-2">
@@ -1192,7 +1192,7 @@ export default function PerformancePage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para otimização de performance">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Zap className="h-5 w-5 mr-2 text-yellow-500" />

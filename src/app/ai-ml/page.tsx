@@ -165,7 +165,7 @@ export default function AIMLPage() {
         {activeTab === 'overview' && (
           <>
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
               {aiFeatures.map((feature, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                   <div className="flex items-center mb-4">
@@ -188,7 +188,7 @@ export default function AIMLPage() {
             </div>
 
             {/* Quick Examples */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
               <DemoCardStatic
                 title="OpenAI Chat Integration"
                 description="Exemplo básico de chat com GPT-4"
@@ -262,7 +262,7 @@ export async function searchSimilar(
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 mb-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Guia de Início Rápido</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-1.5">
                 {quickStartSteps.map((item, index) => (
                   <div key={index} className="text-center">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-indigo-100 rounded-full mb-3">
@@ -279,7 +279,7 @@ export async function searchSimilar(
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Por que usar AI/ML?</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-full mb-3">
                     <Zap className="w-6 h-6 text-green-600" />
@@ -316,7 +316,7 @@ export async function searchSimilar(
 
         {/* Providers Tab */}
         {activeTab === 'providers' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {providers.map((provider, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center justify-between mb-4">
@@ -355,7 +355,7 @@ export async function searchSimilar(
 
         {/* Use Cases Tab */}
         {activeTab === 'use-cases' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             {aiUseCases.map((useCase, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="flex items-center mb-4">

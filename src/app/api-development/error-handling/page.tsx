@@ -133,7 +133,7 @@ export default function ErrorHandlingPage() {
         </motion.div>
 
         <DemoSection title="Tipos de Erros Comuns">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {errorTypes.map((error, index) => {
               const IconComponent = error.icon;
               return (
@@ -172,7 +172,7 @@ export default function ErrorHandlingPage() {
         </DemoSection>
 
         <DemoSection title="Estrutura de Erro Padronizada">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Interface de Erro</h3>
               <CodeBlock
@@ -345,7 +345,7 @@ export class ExternalServiceError extends APIErrorBase {
         </DemoSection>
 
         <DemoSection title="Error Handler Global">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibent mb-4">Handler Principal</h3>
               <CodeBlock
@@ -593,7 +593,7 @@ export const DELETE = withErrorHandler(async (
         </DemoSection>
 
         <DemoSection title="Logging de Erros">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Sistema de Logging</h3>
               <CodeBlock
@@ -943,7 +943,7 @@ export function getErrorStats() {
         </DemoSection>
 
         <DemoSection title="Estratégias de Recuperação">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Retry Logic</h3>
               <CodeBlock
@@ -1170,7 +1170,7 @@ export function withCircuitBreaker(
         </DemoSection>
 
         <DemoSection title="Recursos de Tratamento de Erros">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {errorHandlingFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (

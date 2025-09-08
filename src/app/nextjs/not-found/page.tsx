@@ -486,7 +486,7 @@ function NotFoundDemo() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="font-semibold text-gray-800 dark:text-white mb-3">Ações:</h3>
                 <div className="space-y-2">
@@ -634,7 +634,7 @@ function NotFoundFeatures() {
   ];
   
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
       {features.map((feature, index) => (
         <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg border">
           <div className="flex items-center space-x-3 mb-4">

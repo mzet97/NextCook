@@ -453,7 +453,7 @@ export default function GitHubActionsPage() {
 
         {/* Features */}
         <DemoSection title="Por que GitHub Actions?" description="Vantagens da automação integrada">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {githubActionsFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -484,7 +484,7 @@ export default function GitHubActionsPage() {
 
         {/* Workflow Triggers */}
         <DemoSection title="Triggers de Workflow" description="Eventos que podem iniciar workflows">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {workflowTriggers.map((trigger, index) => (
               <motion.div
                 key={trigger.name}
@@ -636,7 +636,7 @@ export default function GitHubActionsPage() {
                 </p>
               </div>
               
-              <div className="grid lg:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <h4 className="font-medium text-gray-900 dark:text-white mb-3">Práticas Recomendadas:</h4>
                   <ul className="space-y-2">
@@ -663,7 +663,7 @@ export default function GitHubActionsPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Primeiros passos com GitHub Actions">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Criar Primeiro Workflow" description="Setup básico de um workflow">
               <div className="space-y-4">
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
@@ -736,7 +736,7 @@ git push`}
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para workflows eficientes">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Zap className="h-5 w-5 mr-2 text-yellow-500" />

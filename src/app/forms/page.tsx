@@ -20,7 +20,7 @@ export default function FormsPage() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5 mb-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between">
               <div>
@@ -53,7 +53,7 @@ export default function FormsPage() {
         </div>
 
         {/* Navigation Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
           {/* React Hook Form */}
           <Link href="/forms/react-hook-form" className="group">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 group-hover:scale-105">
@@ -117,7 +117,7 @@ export default function FormsPage() {
           title="Por que usar React Hook Form + Zod?"
           description="A combinação perfeita para formulários modernos em React"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white">React Hook Form</h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">

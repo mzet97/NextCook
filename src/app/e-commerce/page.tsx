@@ -509,7 +509,7 @@ export default function EcommercePage() {
         </div>
 
         {/* Features Overview */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
               <div className="flex justify-center mb-4">
@@ -541,7 +541,7 @@ export default function EcommercePage() {
         </div>
 
         {/* Topics Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-12">
           {filteredTopics.map((topic, index) => (
             <Link key={index} href={topic.href}>
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-emerald-200 transition-all duration-200 group h-full">
@@ -624,7 +624,7 @@ export default function EcommercePage() {
         <div className="mt-12 bg-white rounded-xl shadow-sm border border-gray-100 p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Por que escolher nossa stack?</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
             <div className="text-center">
               <div className="flex justify-center mb-4">
                 <div className="flex">

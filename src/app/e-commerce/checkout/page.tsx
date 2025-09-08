@@ -1084,7 +1084,7 @@ export default function CheckoutPage() {
 
         {/* Checkout Steps */}
         <DemoSection title="Etapas do Checkout" description="Fluxo completo do processo de compra">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {checkoutSteps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -1281,7 +1281,7 @@ export default function CheckoutPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para checkout eficaz">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="🛒 UX/UI" description="Experiência do usuário">
               <div className="space-y-3">
                 {[

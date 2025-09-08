@@ -639,7 +639,7 @@ function OptimizationDemo() {
           {activeOptimization}
         </h3>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
           <div>
             <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Descrição:</h4>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -685,7 +685,7 @@ export default function FontOptimizationPage() {
             title="Tipos de Fontes"
             description="Diferentes estratégias para carregar fontes no Next.js"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
               {fontTypes.map((type) => (
                 <div key={type.type} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
                   <div className="flex items-center space-x-3 mb-4">

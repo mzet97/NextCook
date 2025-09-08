@@ -188,7 +188,7 @@ function ButtonShowcase() {
 
 function CardShowcase() {
   return (
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gap-1.5">
       <Card>
         <CardHeader>
           <CardTitle>Create project</CardTitle>
@@ -365,7 +365,7 @@ export default function ShadcnUIPage() {
         </motion.div>
 
         <DemoSection title="Características Principais">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">📋 Copy & Paste</h3>
               <p className="text-blue-800">
@@ -410,7 +410,7 @@ export default function ShadcnUIPage() {
         </DemoSection>
 
         <DemoSection title="Instalação e Setup">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação via CLI" description="Método recomendado">
               <CodeBlock
                 language="bash"
@@ -523,7 +523,7 @@ const buttonVariants = cva(
         </DemoSection>
 
         <DemoSection title="Vantagens do Shadcn/ui">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <div className="bg-yellow-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-yellow-900 mb-2">🎯 Controle Total</h3>
               <p className="text-yellow-800">

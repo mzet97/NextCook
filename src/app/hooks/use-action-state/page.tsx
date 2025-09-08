@@ -652,7 +652,7 @@ function TodoListWithActionState() {
           </DemoSection>
 
           <DemoSection title="Key Features">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div className="p-4 bg-green-50 rounded-lg">
                 <h4 className="font-semibold text-green-900 mb-2">✅ Advantages</h4>
                 <ul className="text-green-800 space-y-1">

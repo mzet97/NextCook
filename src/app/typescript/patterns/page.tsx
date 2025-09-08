@@ -721,7 +721,7 @@ export default function TypeScriptPatternsPage() {
 
         {/* Introdução aos Padrões */}
         <DemoSection title="Padrões de Design">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 Padrões Criacionais
@@ -762,7 +762,7 @@ export default function TypeScriptPatternsPage() {
 
         {/* Demonstrações Práticas */}
         <DemoSection title="Demonstrações Práticas">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <SingletonDemo />
             <FactoryDemo />
             <ObserverDemo />
@@ -775,7 +775,7 @@ export default function TypeScriptPatternsPage() {
         {/* Implementações dos Padrões */}
         <DemoSection title="Implementações">
           <div className="space-y-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               <CodeBlock
                 title="Singleton Pattern"
                 language="tsx"
@@ -835,7 +835,7 @@ class AnimalFactory {
               />
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               <CodeBlock
                 title="Observer Pattern"
                 language="tsx"
@@ -893,7 +893,7 @@ class PaymentProcessor {
               />
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               <CodeBlock
                 title="Builder Pattern"
                 language="tsx"
@@ -963,7 +963,7 @@ class MilkDecorator extends CoffeeDecorator {
 
         {/* Vantagens dos Padrões */}
         <DemoSection title="Vantagens dos Design Patterns">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 ✅ Benefícios

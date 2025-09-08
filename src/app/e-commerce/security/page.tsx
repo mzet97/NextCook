@@ -878,7 +878,7 @@ export default function SecurityPage() {
 
         {/* Security Features */}
         <DemoSection title="Recursos de Segurança" description="Funcionalidades essenciais para segurança de e-commerce">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {securityFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -909,7 +909,7 @@ export default function SecurityPage() {
 
         {/* Security Threats */}
         <DemoSection title="Ameaças de Segurança" description="Principais ameaças e como se proteger">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {securityThreats.map((category, index) => (
               <motion.div
                 key={category.category}
@@ -973,7 +973,7 @@ export default function SecurityPage() {
 
         {/* Security Dashboard */}
         <DemoSection title="Dashboard de Segurança" description="Monitoramento em tempo real">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {[
               { label: 'PCI Compliance', status: securityStatus.pciCompliant, icon: CreditCard },
               { label: 'SSL/TLS', status: securityStatus.sslEnabled, icon: Lock },
@@ -1008,7 +1008,7 @@ export default function SecurityPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes de segurança para e-commerce">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Implementar" description="Práticas essenciais de segurança">
               <div className="space-y-3">
                 {[
@@ -1053,7 +1053,7 @@ export default function SecurityPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial de segurança">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Checklist de Segurança" description="Itens essenciais para implementar">
               <div className="space-y-3">
                 {[

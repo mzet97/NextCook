@@ -398,7 +398,7 @@ export default function SanityPage() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-12">
           {sanityFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-center mb-4">
@@ -520,7 +520,7 @@ SANITY_API_TOKEN=your_api_token`}
         </div>
 
         {/* Best Practices */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-8">
           <DemoCardStatic
             title="Performance Tips"
             description="Otimizações para melhor performance"

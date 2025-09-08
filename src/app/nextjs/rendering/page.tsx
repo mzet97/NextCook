@@ -436,7 +436,7 @@ export default function RenderingPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-1.5">
             {renderingTypes.map((type) => (
               <div key={type.title} className="card">
                 <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${

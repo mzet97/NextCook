@@ -502,7 +502,7 @@ export default function ZustandCompositionPage() {
 
         {/* Demonstração Prática */}
         <DemoSection title="Demonstração Prática - App E-commerce">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-1.5">
             <AuthDemo />
             <CartDemo />
             <NotificationDemo />
@@ -512,7 +512,7 @@ export default function ZustandCompositionPage() {
         {/* Implementação dos Slices */}
         <DemoSection title="Implementação dos Slices">
           <div className="space-y-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               <CodeBlock
                 title="Auth Slice"
                 language="tsx"
@@ -618,7 +618,7 @@ function useAppData() {
 
         {/* Melhores Práticas */}
         <DemoSection title="Melhores Práticas de Composição">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 ✅ Boas Práticas
@@ -652,7 +652,7 @@ function useAppData() {
 
         {/* Padrões Avançados */}
         <DemoSection title="Padrões Avançados">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div className="space-y-6">
               <div className="card">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">

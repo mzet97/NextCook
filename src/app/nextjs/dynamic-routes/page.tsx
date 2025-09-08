@@ -358,7 +358,7 @@ export default function DynamicRoutesPage() {
             title="Tipos de Rotas Dinâmicas"
             description="Entenda as diferenças entre os três tipos de rotas dinâmicas"
           >
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-1.5">
               {routeTypes.map((route) => (
                 <div key={route.type} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border">
                   <div className="flex items-center space-x-3 mb-4">

@@ -56,7 +56,7 @@ export default function UseOptimisticPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
           <OptimisticChatExample />
           <OptimisticLikeExample />
         </div>

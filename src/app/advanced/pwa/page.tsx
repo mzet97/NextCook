@@ -751,7 +751,7 @@ export default function PWAPage() {
 
         {/* Features */}
         <DemoSection title="Recursos Principais" description="Funcionalidades que tornam sua web app progressiva">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {pwaFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -802,7 +802,7 @@ export default function PWAPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid lg:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-1.5">
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                     {cacheStrategies[selectedStrategy].name}
@@ -920,7 +920,7 @@ export default function PWAPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para criar PWAs eficientes">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Zap className="h-5 w-5 mr-2 text-yellow-500" />

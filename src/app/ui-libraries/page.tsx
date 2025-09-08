@@ -203,7 +203,7 @@ export default function UILibrariesPage() {
         {/* Featured Libraries */}
         <DemoSection title="Bibliotecas em Destaque" description="As principais ferramentas para desenvolvimento de UI">
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -273,7 +273,7 @@ export default function UILibrariesPage() {
 
         {/* Design Principles */}
         <DemoSection title="Princípios de Design" description="Fundamentos para criar interfaces excepcionais">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {designPrinciples.map((principle, index) => (
               <motion.div
                 key={principle.title}
@@ -369,7 +369,7 @@ export default function UILibrariesPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Guia rápido para implementar UI libraries">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Instalação Básica" description="Setup inicial das bibliotecas">
               <CodeBlock
                 language="bash"
@@ -415,7 +415,7 @@ module.exports = {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Dicas para usar UI libraries efetivamente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Sparkles className="h-5 w-5 mr-2 text-yellow-500" />

@@ -199,7 +199,7 @@ export default function Dashboard() {
     <div className="dashboard">
       <h1>Dashboard</h1>
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
         <Suspense fallback={<AnalyticsLoading />}>
           <Analytics />
         </Suspense>

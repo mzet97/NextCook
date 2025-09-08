@@ -275,7 +275,7 @@ export const revalidate = 3600; // Revalida a cada hora`;
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5 mb-12">
           <DemoSection title="Meta Tags Atuais">
             <div className="space-y-4">
               <div className="p-4 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg border border-emerald-300 dark:border-emerald-700">
@@ -374,7 +374,7 @@ export const revalidate = 3600; // Revalida a cada hora`;
           <CodeBlock code={generateStaticParamsCode} language="tsx" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5 mb-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🎯 Tipos de Metadata</h2>
             <div className="space-y-4">
@@ -426,7 +426,7 @@ export const revalidate = 3600; // Revalida a cada hora`;
 
         <div className="bg-gradient-to-r from-emerald-100 to-cyan-100 dark:from-emerald-900/30 dark:to-cyan-900/30 rounded-xl p-8">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">🚀 Benefícios da Metadata API</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
             <div>
               <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">SEO</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400">

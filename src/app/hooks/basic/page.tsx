@@ -118,7 +118,7 @@ export default function BasicHooksPage() {
               useState Hook
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               {/* useState Examples */}
               <div className="space-y-6">
                 {/* Counter Example */}
@@ -274,7 +274,7 @@ const removeTodo = (index: number) => {
               useEffect Hook
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               {/* useEffect Examples */}
               <div className="space-y-6">
                 <div className="card">
@@ -371,7 +371,7 @@ useEffect(() => {
               useContext Hook
             </h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
               {/* useContext Example */}
               <div className="space-y-6">
                 <div className="card">

@@ -103,7 +103,7 @@ export default function HttpMethodsPage() {
         </motion.div>
 
         <DemoSection title="Métodos HTTP Principais">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 mb-8">
             {httpMethods.map((method, index) => {
               const IconComponent = method.icon;
               return (
@@ -133,7 +133,7 @@ export default function HttpMethodsPage() {
         </DemoSection>
 
         <DemoSection title="GET - Recuperar Dados">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Listar Recursos</h3>
               <CodeBlock
@@ -243,7 +243,7 @@ export async function GET(
         </DemoSection>
 
         <DemoSection title="POST - Criar Recursos">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Criar Usuário</h3>
               <CodeBlock
@@ -385,7 +385,7 @@ export async function POST(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="PUT vs PATCH - Atualizar Recursos">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">PUT - Substituição Completa</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -493,7 +493,7 @@ export async function PATCH(
         </DemoSection>
 
         <DemoSection title="DELETE - Remover Recursos">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Exclusão Simples</h3>
               <CodeBlock
@@ -618,7 +618,7 @@ export async function DELETE(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Status Codes HTTP">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {statusCodes.map((status, index) => {
               const IconComponent = status.icon;
               return (
@@ -644,7 +644,7 @@ export async function DELETE(request: NextRequest) {
         </DemoSection>
 
         <DemoSection title="Códigos de Status Detalhados">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <div>
               <h3 className="text-xl font-semibold mb-4">Códigos de Sucesso (2xx)</h3>
               <div className="space-y-4">

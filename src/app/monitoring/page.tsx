@@ -211,7 +211,7 @@ export default function MonitoringPage() {
 
         {/* Main Features */}
         <DemoSection title="Recursos Principais" description="Ferramentas essenciais para monitoramento e análise">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {monitoringFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -268,7 +268,7 @@ export default function MonitoringPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-1.5">
                 {keyMetrics[selectedMetricCategory].metrics.map((metric, index) => (
                   <div key={metric.name} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <div className="flex items-center justify-between mb-2">
@@ -347,7 +347,7 @@ export default function MonitoringPage() {
 
         {/* Implementation Guide */}
         <DemoSection title="Guia de Implementação" description="Passos para configurar monitoramento completo">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {implementationSteps.map((step, index) => (
               <motion.div
                 key={step.step}
@@ -383,7 +383,7 @@ export default function MonitoringPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para monitoramento eficaz">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Settings className="h-5 w-5 mr-2 text-blue-500" />

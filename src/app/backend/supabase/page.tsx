@@ -194,7 +194,7 @@ export default function SupabasePage() {
 
         {/* Features Overview */}
         <DemoSection title="Recursos Principais" description="Tudo que você precisa para construir aplicações modernas">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {supabaseFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -225,7 +225,7 @@ export default function SupabasePage() {
 
         {/* Setup & Installation */}
         <DemoSection title="Configuração Inicial" description="Como começar com Supabase">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Instalação" description="Instalar cliente Supabase">
               <CodeBlock
                 language="bash"
@@ -305,7 +305,7 @@ export function createClient() {
             <div className="p-6">
               {selectedTab === 'database' && (
                 <div className="space-y-6">
-                  <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="grid lg:grid-cols-2 gap-1.5">
                     <div>
                       <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Operações CRUD</h3>
                       <div className="grid grid-cols-2 gap-3 mb-4">
@@ -397,7 +397,7 @@ const { error } = await supabase
               
               {selectedTab === 'auth' && (
                 <div className="space-y-6">
-                  <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="grid lg:grid-cols-2 gap-1.5">
                     <div>
                       <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Métodos de Autenticação</h3>
                       <div className="space-y-3 mb-6">
@@ -563,7 +563,7 @@ supabase.auth.onAuthStateChange((event, session) => {
               
               {selectedTab === 'storage' && (
                 <div className="space-y-6">
-                  <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="grid lg:grid-cols-2 gap-1.5">
                     <div>
                       <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">File Operations</h3>
                       <div className="space-y-4">
@@ -641,7 +641,7 @@ const { data, error } = await supabase.storage
 
         {/* Row Level Security */}
         <DemoSection title="Row Level Security (RLS)" description="Segurança a nível de linha para controle de acesso granular">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Políticas de Segurança" description="Controle quem pode acessar quais dados">
               <CodeBlock
                 language="sql"
@@ -712,7 +712,7 @@ CREATE POLICY "Acesso baseado em subscription" ON premium_content
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Supabase eficientemente">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Shield className="h-5 w-5 mr-2 text-green-500" />

@@ -175,7 +175,7 @@ function ResponsiveGridDemo() {
         
         <div>
           <h4 className="font-semibold mb-3">Cards Responsivos:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             {[1, 2, 3, 4, 5, 6].map(item => (
               <div key={item} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm">
                 <div className="w-full h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg mb-4"></div>
@@ -275,7 +275,7 @@ function ResponsiveFlexDemo() {
           <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div className="text-xl font-bold">Logo</div>
-              <nav className="flex flex-col sm:flex-row gap-2 sm:gap-6 w-full sm:w-auto">
+              <nav className="flex flex-col sm:flex-row gap-2 sm:gap-1.5 w-full sm:w-auto">
                 <a href="#" className="text-gray-600 hover:text-blue-600 py-2 sm:py-0">Home</a>
                 <a href="#" className="text-gray-600 hover:text-blue-600 py-2 sm:py-0">About</a>
                 <a href="#" className="text-gray-600 hover:text-blue-600 py-2 sm:py-0">Services</a>
@@ -412,7 +412,7 @@ export default function ResponsivePage() {
           </p>
         </div>
 
-        <div className="grid gap-8 max-w-6xl mx-auto">
+        <div className="grid gap-1.5 max-w-6xl mx-auto">
           <BreakpointsDemo />
           <ResponsiveGridDemo />
           <ResponsiveFlexDemo />

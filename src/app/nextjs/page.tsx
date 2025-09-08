@@ -143,7 +143,7 @@ export default function NextJSPage() {
               Métricas de performance desta aplicação Next.js
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {performanceMetrics.map((metric) => (
               <div key={metric.label} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 text-center">
                 <div className={`text-3xl font-bold mb-2 ${
@@ -174,7 +174,7 @@ export default function NextJSPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1.5">
             {nextjsFeatures.map((feature) => (
               <div key={feature.title} className="group">
                 <DemoCard {...feature} />
@@ -204,7 +204,7 @@ export default function NextJSPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
                 🗂️ Roteamento

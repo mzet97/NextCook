@@ -53,8 +53,120 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Scripts Disponíveis
+
+```bash
+# Desenvolvimento
+pnpm dev              # Inicia servidor de desenvolvimento
+pnpm build            # Build de produção
+pnpm start            # Inicia servidor de produção
+pnpm preview          # Build + start (preview local)
+
+# Qualidade de código
+pnpm lint             # ESLint
+pnpm type-check       # Verificação TypeScript
+pnpm test             # Testes unitários
+pnpm test:e2e         # Testes E2E com Playwright
+pnpm check            # Lint + testes
+pnpm ci               # Pipeline completo (lint + type-check + test + build)
+
+# Utilitários
+pnpm clean            # Limpa arquivos de build
+pnpm build:analyze    # Build com análise de bundle
+```
+
+## CI/CD e Deploy
+
+### Configuração Automática
+
+O projeto está configurado com GitHub Actions para CI/CD automático:
+
+- **Pull Requests**: Deploy de preview automático
+- **Branch main**: Deploy de produção automático
+- **Testes**: Execução automática de lint, testes unitários e E2E
+- **Segurança**: Scan de vulnerabilidades com Trivy
+- **Performance**: Auditoria Lighthouse automática
+
+### Variáveis de Ambiente Necessárias
+
+Configure as seguintes secrets no GitHub:
+
+```bash
+# Vercel (obrigatório)
+VERCEL_TOKEN=your_vercel_token
+VERCEL_ORG_ID=your_org_id
+VERCEL_PROJECT_ID=your_project_id
+
+# Opcionais
+CODECOV_TOKEN=your_codecov_token
+LHCI_GITHUB_APP_TOKEN=your_lighthouse_token
+```
+
+### Como Obter as Credenciais Vercel
+
+1. **VERCEL_TOKEN**:
+   ```bash
+   npx vercel login
+   npx vercel --token
+   ```
+
+2. **VERCEL_ORG_ID e VERCEL_PROJECT_ID**:
+   ```bash
+   npx vercel link
+   # Os IDs estarão em .vercel/project.json
+   ```
+
+### Deploy Manual
+
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
+
+# Login
+vercel login
+
+# Deploy de preview
+vercel
+
+# Deploy de produção
+vercel --prod
+```
+
+### Configuração do Projeto Vercel
+
+O arquivo `vercel.json` inclui:
+
+- ✅ Headers de segurança
+- ✅ Cache otimizado para assets
+- ✅ Redirects e rewrites
+- ✅ Configurações de build
+- ✅ Cron jobs
+
+### Monitoramento
+
+- **Performance**: Lighthouse CI em cada PR
+- **Segurança**: Trivy security scan
+- **Cobertura**: Codecov integration
+- **E2E**: Playwright tests automáticos
+
+## Estrutura do Workflow
+
+```mermaid
+graph TD
+    A[Push/PR] --> B[Lint & Test]
+    B --> C[Build]
+    C --> D[E2E Tests]
+    B --> E[Security Scan]
+    C --> F{Branch?}
+    F -->|PR| G[Deploy Preview]
+    F -->|main| H[Deploy Production]
+    G --> I[Lighthouse Audit]
+```
+
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O deploy é automatizado via GitHub Actions, mas você também pode usar:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/nextcook)
+
+Para deploy manual, consulte a [documentação do Next.js](https://nextjs.org/docs/app/building-your-application/deploying).

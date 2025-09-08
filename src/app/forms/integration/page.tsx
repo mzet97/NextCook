@@ -168,7 +168,7 @@ export default function IntegrationPage() {
           title="Formulário de Registro"
           description="Exemplo completo com validação complexa e estados de loading"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitReg(onSubmitRegistration)} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -360,7 +360,7 @@ const { register, handleSubmit, formState: { errors } } =
           title="Formulário de Produto"
           description="Exemplo com arrays, enums e campos dinâmicos"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitProd(onSubmitProduct)} className="space-y-4">
                 <div>
@@ -534,7 +534,7 @@ const addTag = () => {
           title="Formulário de Contato"
           description="Validação condicional baseada em outros campos"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             <div>
               <form onSubmit={handleSubmitContact(onSubmitContact)} className="space-y-4">
                 <div>
@@ -692,7 +692,7 @@ const subject = watch(&apos;subject&apos;);
           title="Vantagens da Integração"
           description="Por que React Hook Form + Zod é a combinação perfeita"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
             <div className="space-y-6">
               <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">

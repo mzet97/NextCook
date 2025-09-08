@@ -726,7 +726,7 @@ export default function AnalyticsPage() {
 
         {/* Features */}
         <DemoSection title="Plataformas de Analytics" description="Ferramentas para análise de dados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {analyticsFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -789,7 +789,7 @@ export default function AnalyticsPage() {
             </div>
 
             {/* Live Metrics */}
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid md:grid-cols-3 gap-1.5 mb-8">
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4">
                 <div className="flex items-center justify-between">
                   <div>
@@ -828,7 +828,7 @@ export default function AnalyticsPage() {
             </div>
 
             {/* Device Breakdown */}
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-1.5">
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Dispositivos
@@ -913,7 +913,7 @@ export default function AnalyticsPage() {
             </div>
             
             <div className="p-6">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
                 {analyticsMetrics[selectedMetricCategory].metrics.map((metric) => (
                   <div key={metric.name} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <div className="flex items-center justify-between mb-2">
@@ -998,7 +998,7 @@ export default function AnalyticsPage() {
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para analytics eficazes">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Target className="h-5 w-5 mr-2 text-blue-500" />

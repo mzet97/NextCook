@@ -418,7 +418,7 @@ export default function DockerPage() {
 
         {/* Features */}
         <DemoSection title="Por que Docker?" description="Benefícios da containerização">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {dockerFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -449,7 +449,7 @@ export default function DockerPage() {
 
         {/* Installation */}
         <DemoSection title="Instalação e Setup" description="Como instalar e configurar Docker">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-1.5 mb-8">
             <DemoCardStatic title="Instalação" description="Instalar Docker em diferentes sistemas">
               <CodeBlock
                 language="bash"
@@ -631,7 +631,7 @@ echo 'alias dc="docker-compose"' >> ~/.bashrc`}
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para usar Docker eficientemente">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Otimização de Imagens" description="Como criar imagens menores e mais eficientes">
               <div className="space-y-4">
                 <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
@@ -706,7 +706,7 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
         {/* Production Tips */}
         <DemoSection title="Produção" description="Configurações para ambiente de produção">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-1.5">
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white flex items-center">
                   <Monitor className="h-5 w-5 mr-2 text-blue-500" />

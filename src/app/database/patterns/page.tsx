@@ -1261,7 +1261,7 @@ export default function DatabasePatternsPage() {
 
         {/* Design Patterns Overview */}
         <DemoSection title="Padrões de Design" description="Padrões fundamentais para acesso a dados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {designPatterns.map((pattern, index) => {
               const Icon = pattern.icon;
               return (
@@ -1466,7 +1466,7 @@ export default function DatabasePatternsPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para implementação de padrões">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="🏗️ Arquitetura" description="Práticas arquiteturais">
               <div className="space-y-3">
                 {[

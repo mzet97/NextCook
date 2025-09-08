@@ -608,7 +608,7 @@ export default function DatabaseTestingPage() {
 
         {/* Testing Types */}
         <DemoSection title="Tipos de Teste" description="Diferentes abordagens para testar banco de dados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {testingTypes.map((type, index) => {
               const Icon = type.icon;
               return (
@@ -783,7 +783,7 @@ export default function DatabaseTestingPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para testes eficazes de banco de dados">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="🧪 Isolamento" description="Práticas de isolamento de testes">
               <div className="space-y-3">
                 {[

@@ -241,7 +241,7 @@ export default function HooksPage() {
           <Breadcrumbs />
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-1.5">
           {/* Conteúdo principal */}
           <div className="lg:col-span-3">
         <div className="text-center mb-16">
@@ -274,7 +274,7 @@ export default function HooksPage() {
 
         {/* Filtros */}
         <div className="mb-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1.5">
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Buscar Hooks
@@ -358,7 +358,7 @@ export default function HooksPage() {
                     </span>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
                     {category.hooks.map(hook => (
                       <HookCard key={hook.name} hook={hook} />
                     ))}
@@ -368,7 +368,7 @@ export default function HooksPage() {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
             {filteredHooks.map(hook => (
               <HookCard key={hook.name} hook={hook} />
             ))}
@@ -393,7 +393,7 @@ export default function HooksPage() {
             📊 Estatísticas dos Hooks
           </h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1.5">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
                 {hooks.length}

@@ -324,7 +324,7 @@ export default function DatabaseSecurityPage() {
 
         {/* Security Features */}
         <DemoSection title="Pilares da Segurança" description="Componentes fundamentais da segurança de banco de dados">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {securityFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -551,7 +551,7 @@ export default function DatabaseSecurityPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para segurança de banco de dados">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-1.5">
             <DemoCardStatic title="🔐 Autenticação" description="Práticas de autenticação segura">
               <div className="space-y-3">
                 {[

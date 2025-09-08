@@ -831,7 +831,7 @@ function SubscriptionDashboard() {
   if (loading) return <div>Carregando métricas...</div>;
   
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5">
       <MetricCard
         title="MRR"
         value={formatCurrency(metrics.mrr.current)}
@@ -899,7 +899,7 @@ export default function SubscriptionsPage() {
 
         {/* Features */}
         <DemoSection title="Recursos de Assinatura" description="Funcionalidades essenciais para gestão de assinaturas">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5 mb-8">
             {subscriptionFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -930,7 +930,7 @@ export default function SubscriptionsPage() {
 
         {/* Subscription Models */}
         <DemoSection title="Modelos de Assinatura" description="Diferentes estratégias de monetização">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-1.5">
             {subscriptionModels.map((model, index) => (
               <motion.div
                 key={model.name}
@@ -990,7 +990,7 @@ export default function SubscriptionsPage() {
 
         {/* Pricing Demo */}
         <DemoSection title="Demo de Planos" description="Simulação de seleção de planos">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-1.5 mb-8">
             {[
               { name: 'Básico', price: 29.90, features: ['5 Projetos', 'Suporte Email', '10GB Storage'] },
               { name: 'Pro', price: 59.90, features: ['Projetos Ilimitados', 'Suporte Prioritário', '100GB Storage', 'Analytics Avançado'], popular: true },
@@ -1048,7 +1048,7 @@ export default function SubscriptionsPage() {
 
         {/* Best Practices */}
         <DemoSection title="Melhores Práticas" description="Diretrizes para gestão de assinaturas">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="✅ Recomendações" description="Práticas recomendadas">
               <div className="space-y-3">
                 {[
@@ -1093,7 +1093,7 @@ export default function SubscriptionsPage() {
 
         {/* Getting Started */}
         <DemoSection title="Como Começar" description="Setup inicial de assinaturas">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-1.5">
             <DemoCardStatic title="Configuração Stripe" description="Setup do Stripe para assinaturas">
               <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
                 <pre className="text-green-400 text-sm">
