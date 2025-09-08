@@ -9,12 +9,7 @@ import {
   Zap,
   CheckCircle,
   AlertTriangle,
-  Play,
-  Settings,
-  Users,
-  BarChart3,
-  Webhook,
-  Lock
+  Info
 } from 'lucide-react';
 import { DemoCardStatic } from '@/components/DemoCardStatic';
 import { DemoSection } from '@/components/DemoSection';

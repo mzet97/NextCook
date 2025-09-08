@@ -146,9 +146,8 @@ function ListWithUseId() {
       
       <div className="space-y-2">
         {items.map((item, index) => {
-          // eslint-disable-next-line react-hooks/rules-of-hooks
-          const itemId = useId();
-          const descriptionId = useId();
+          const itemId = `item-${index}`;
+          const descriptionId = `description-${index}`;
           
           return (
             <div key={index} className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg">
