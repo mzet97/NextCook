@@ -157,7 +157,7 @@ export default function SearchBar({ isOpen, onClose, searchData }: SearchBarProp
             {query.trim() !== '' && results.length === 0 && (
               <div className="px-4 py-8 text-center">
                 <p className="text-gray-500 dark:text-gray-400">
-                  Nenhum resultado encontrado para "{query}"
+                  Nenhum resultado encontrado para &quot;{query}&quot;
                 </p>
               </div>
             )}

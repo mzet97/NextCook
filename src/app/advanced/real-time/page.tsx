@@ -19,7 +19,8 @@ import {
   Clock,
   Eye,
   Heart,
-  Share
+  Share,
+  Users
 } from 'lucide-react';
 import { DemoCard } from '@/components/DemoCard';
 import { DemoCardStatic } from '@/components/DemoCardStatic';
