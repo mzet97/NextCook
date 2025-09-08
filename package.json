@@ -21,8 +21,7 @@
     "build:analyze": "ANALYZE=true npm run build",
     "ci": "pnpm lint && pnpm type-check && pnpm test && pnpm build",
     "preview": "npm run build && npm run start",
-    "clean": "rm -rf .next out dist",
-    "postinstall": "prisma generate"
+    "clean": "rm -rf .next out dist"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.10.0",
