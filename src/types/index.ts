@@ -154,7 +154,7 @@ export interface DemoCardProps {
   title: string;
   description: string;
   icon: string;
-  href: string;
+  href?: string;
   color: string;
 }
 

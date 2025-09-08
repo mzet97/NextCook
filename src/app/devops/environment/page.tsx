@@ -109,7 +109,7 @@ const environmentTypes = [
       { key: 'NODE_ENV', value: 'production' },
       { key: 'DEBUG', value: 'false' },
       { key: 'API_URL', value: 'https://api.example.com' },
-      { key: 'DB_URL', value: '${DATABASE_URL}' }
+      { key: 'DB_URL', value: 'process.env.DATABASE_URL' }
     ]
   }
 ];
@@ -148,34 +148,6 @@ EMAIL_SERVER_PORT=1025
 EMAIL_FROM=noreply@localhost`
       },
       {
-        name: '.env.staging',
-        content: `# Staging environment
-NODE_ENV=production
-NEXT_PUBLIC_APP_URL=https://staging.example.com
-NEXT_PUBLIC_API_URL=https://api-staging.example.com
-
-# Database
-DATABASE_URL=postgresql://user:password@staging-db:5432/myapp_staging
-REDIS_URL=redis://staging-redis:6379
-
-# Authentication
-NEXTAUTH_URL=https://staging.example.com
-NEXTAUTH_SECRET=staging-secret-key
-
-# OAuth Providers
-GOOGLE_CLIENT_ID=staging-google-client-id
-GOOGLE_CLIENT_SECRET=staging-google-client-secret
-
-# External APIs
-STRIPE_PUBLISHABLE_KEY=pk_test_...
-STRIPE_SECRET_KEY=sk_test_...
-
-# Email
-EMAIL_SERVER_HOST=smtp.staging.example.com
-EMAIL_SERVER_PORT=587
-EMAIL_FROM=noreply@staging.example.com`
-      },
-      {
         name: '.env.production',
         content: `# Production environment
 NODE_ENV=production
@@ -183,276 +155,25 @@ NEXT_PUBLIC_APP_URL=https://example.com
 NEXT_PUBLIC_API_URL=https://api.example.com
 
 # Database (use secrets management)
-DATABASE_URL=${DATABASE_URL}
-REDIS_URL=${REDIS_URL}
+DATABASE_URL=\${DATABASE_URL}
+REDIS_URL=\${REDIS_URL}
 
 # Authentication
 NEXTAUTH_URL=https://example.com
-NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+NEXTAUTH_SECRET=\${NEXTAUTH_SECRET}
 
 # OAuth Providers
-GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
-GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+GOOGLE_CLIENT_ID=\${GOOGLE_CLIENT_ID}
+GOOGLE_CLIENT_SECRET=\${GOOGLE_CLIENT_SECRET}
 
 # External APIs
-STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_KEY}
-STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+STRIPE_PUBLISHABLE_KEY=\${STRIPE_PUBLISHABLE_KEY}
+STRIPE_SECRET_KEY=\${STRIPE_SECRET_KEY}
 
 # Email
-EMAIL_SERVER_HOST=${EMAIL_SERVER_HOST}
-EMAIL_SERVER_PORT=${EMAIL_SERVER_PORT}
-EMAIL_FROM=${EMAIL_FROM}`
-      }
-    ]
-  },
-  {
-    name: 'Configuration Objects',
-    description: 'Configuração estruturada em TypeScript',
-    files: [
-      {
-        name: 'config/index.ts',
-        content: `import { z } from 'zod'
-
-// Schema de validação
-const configSchema = z.object({
-  app: z.object({
-    name: z.string(),
-    version: z.string(),
-    env: z.enum(['development', 'staging', 'production']),
-    url: z.string().url(),
-    port: z.number().int().positive(),
-  }),
-  database: z.object({
-    url: z.string(),
-    maxConnections: z.number().int().positive(),
-    ssl: z.boolean(),
-  }),
-  auth: z.object({
-    secret: z.string().min(32),
-    sessionMaxAge: z.number().int().positive(),
-    providers: z.object({
-      google: z.object({
-        clientId: z.string(),
-        clientSecret: z.string(),
-      }).optional(),
-      github: z.object({
-        clientId: z.string(),
-        clientSecret: z.string(),
-      }).optional(),
-    }),
-  }),
-  external: z.object({
-    stripe: z.object({
-      publishableKey: z.string(),
-      secretKey: z.string(),
-      webhookSecret: z.string(),
-    }),
-    email: z.object({
-      host: z.string(),
-      port: z.number().int(),
-      user: z.string(),
-      password: z.string(),
-      from: z.string().email(),
-    }),
-  }),
-})
-
-// Configuração base
-const baseConfig = {
-  app: {
-    name: 'My App',
-    version: process.env.npm_package_version || '1.0.0',
-    env: process.env.NODE_ENV as 'development' | 'staging' | 'production',
-    url: process.env.NEXT_PUBLIC_APP_URL!,
-    port: parseInt(process.env.PORT || '3000'),
-  },
-  database: {
-    url: process.env.DATABASE_URL!,
-    maxConnections: parseInt(process.env.DB_MAX_CONNECTIONS || '10'),
-    ssl: process.env.NODE_ENV === 'production',
-  },
-  auth: {
-    secret: process.env.NEXTAUTH_SECRET!,
-    sessionMaxAge: 30 * 24 * 60 * 60, // 30 days
-    providers: {
-      google: process.env.GOOGLE_CLIENT_ID ? {
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      } : undefined,
-      github: process.env.GITHUB_CLIENT_ID ? {
-        clientId: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET!,
-      } : undefined,
-    },
-  },
-  external: {
-    stripe: {
-      publishableKey: process.env.STRIPE_PUBLISHABLE_KEY!,
-      secretKey: process.env.STRIPE_SECRET_KEY!,
-      webhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
-    },
-    email: {
-      host: process.env.EMAIL_SERVER_HOST!,
-      port: parseInt(process.env.EMAIL_SERVER_PORT || '587'),
-      user: process.env.EMAIL_SERVER_USER!,
-      password: process.env.EMAIL_SERVER_PASSWORD!,
-      from: process.env.EMAIL_FROM!,
-    },
-  },
-}
-
-// Validar e exportar configuração
-export const config = configSchema.parse(baseConfig)
-
-// Tipos TypeScript
-export type Config = z.infer<typeof configSchema>`
-      },
-      {
-        name: 'config/environments.ts',
-        content: `import { config } from './index'
-
-// Configurações específicas por ambiente
-export const environmentConfigs = {
-  development: {
-    logging: {
-      level: 'debug',
-      pretty: true,
-    },
-    cache: {
-      ttl: 60, // 1 minute
-      enabled: false,
-    },
-    rateLimit: {
-      enabled: false,
-    },
-  },
-  staging: {
-    logging: {
-      level: 'info',
-      pretty: false,
-    },
-    cache: {
-      ttl: 300, // 5 minutes
-      enabled: true,
-    },
-    rateLimit: {
-      enabled: true,
-      windowMs: 15 * 60 * 1000, // 15 minutes
-      max: 1000, // requests per window
-    },
-  },
-  production: {
-    logging: {
-      level: 'warn',
-      pretty: false,
-    },
-    cache: {
-      ttl: 3600, // 1 hour
-      enabled: true,
-    },
-    rateLimit: {
-      enabled: true,
-      windowMs: 15 * 60 * 1000, // 15 minutes
-      max: 100, // requests per window
-    },
-  },
-}
-
-// Configuração atual baseada no ambiente
-export const currentEnvConfig = environmentConfigs[config.app.env]
-
-// Utilitários
-export const isDevelopment = config.app.env === 'development'
-export const isStaging = config.app.env === 'staging'
-export const isProduction = config.app.env === 'production'
-export const isServer = typeof window === 'undefined'`
-      }
-    ]
-  },
-  {
-    name: 'Docker Configuration',
-    description: 'Configuração com Docker e docker-compose',
-    files: [
-      {
-        name: 'docker-compose.yml',
-        content: `version: '3.8'
-
-services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        NODE_ENV: \${NODE_ENV:-development}
-    ports:
-      - "\${PORT:-3000}:3000"
-    environment:
-      - NODE_ENV=\${NODE_ENV:-development}
-      - DATABASE_URL=\${DATABASE_URL}
-      - REDIS_URL=\${REDIS_URL}
-      - NEXTAUTH_SECRET=\${NEXTAUTH_SECRET}
-    env_file:
-      - .env.local
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
-
-  postgres:
-    image: postgres:15-alpine
-    environment:
-      - POSTGRES_DB=\${POSTGRES_DB:-myapp}
-      - POSTGRES_USER=\${POSTGRES_USER:-user}
-      - POSTGRES_PASSWORD=\${POSTGRES_PASSWORD:-password}
-    ports:
-      - "\${POSTGRES_PORT:-5432}:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "\${REDIS_PORT:-6379}:6379"
-    volumes:
-      - redis_data:/data
-    command: redis-server --appendonly yes
-
-volumes:
-  postgres_data:
-  redis_data:`
-      },
-      {
-        name: '.env.docker',
-        content: `# Docker environment variables
-NODE_ENV=development
-PORT=3000
-
-# Database
-POSTGRES_DB=myapp_dev
-POSTGRES_USER=user
-POSTGRES_PASSWORD=password
-POSTGRES_PORT=5432
-DATABASE_URL=postgresql://user:password@postgres:5432/myapp_dev
-
-# Redis
-REDIS_PORT=6379
-REDIS_URL=redis://redis:6379
-
-# Application
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=docker-development-secret
-
-# External services (use your own keys)
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-STRIPE_PUBLISHABLE_KEY=pk_test_...
-STRIPE_SECRET_KEY=sk_test_...`
+EMAIL_SERVER_HOST=\${EMAIL_SERVER_HOST}
+EMAIL_SERVER_PORT=\${EMAIL_SERVER_PORT}
+EMAIL_FROM=\${EMAIL_FROM}`
       }
     ]
   }
@@ -487,76 +208,14 @@ steps:
       DB_PASSWORD: \${{ secrets.DB_PASSWORD }}
     run: |
       echo "Deploying with API key"
-      deploy.sh
-
-# Secrets por environment
-jobs:
-  deploy:
-    environment: production
-    steps:
-      - name: Deploy to prod
-        env:
-          PROD_API_KEY: \${{ secrets.PROD_API_KEY }}`
-  },
-  {
-    platform: 'AWS Secrets Manager',
-    description: 'Gerenciamento de secrets na AWS',
-    features: ['Automatic rotation', 'Fine-grained access', 'Audit trail', 'Cross-service integration'],
-    setup: `// Acessar secrets na aplicação
-import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-secrets-manager'
-
-const client = new SecretsManagerClient({ region: 'us-east-1' })
-
-export async function getSecret(secretName: string) {
-  try {
-    const command = new GetSecretValueCommand({ SecretId: secretName })
-    const response = await client.send(command)
-    return JSON.parse(response.SecretString || '{}')
-  } catch (error) {
-    console.error('Error retrieving secret:', error)
-    throw error
-  }
-}
-
-// Usar na configuração
-const dbCredentials = await getSecret('prod/database/credentials')
-const DATABASE_URL = \`postgresql://\${dbCredentials.username}:\${dbCredentials.password}@\${dbCredentials.host}:5432/\${dbCredentials.database}\``
-  },
-  {
-    platform: 'HashiCorp Vault',
-    description: 'Secrets management enterprise',
-    features: ['Dynamic secrets', 'Encryption as a service', 'Identity-based access', 'Audit logging'],
-    setup: `// Cliente Vault para Node.js
-import vault from 'node-vault'
-
-const vaultClient = vault({
-  apiVersion: 'v1',
-  endpoint: process.env.VAULT_ADDR,
-  token: process.env.VAULT_TOKEN,
-})
-
-export async function getVaultSecret(path: string) {
-  try {
-    const result = await vaultClient.read(path)
-    return result.data
-  } catch (error) {
-    console.error('Error reading from Vault:', error)
-    throw error
-  }
-}
-
-// Usar secrets dinâmicos
-const dbCreds = await getVaultSecret('database/creds/myapp-role')
-const DATABASE_URL = \`postgresql://\${dbCreds.username}:\${dbCreds.password}@db:5432/myapp\``
+      deploy.sh`
   }
 ];
 
 export default function EnvironmentPage() {
-  const [selectedTab, setSelectedTab] = useState('types');
   const [selectedConfig, setSelectedConfig] = useState(0);
   const [selectedFile, setSelectedFile] = useState(0);
   const [selectedSecret, setSelectedSecret] = useState(0);
-  const [showSecrets, setShowSecrets] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -596,7 +255,7 @@ export default function EnvironmentPage() {
                 >
                   <DemoCardStatic title={feature.title} description={feature.description}>
                     <div className="space-y-4">
-                      <Icon className={`h-12 w-12 mx-auto ${feature.color}`} />
+                      <Icon className={"h-12 w-12 mx-auto " + feature.color} />
                       <div className="space-y-2">
                         {feature.benefits.map((benefit) => (
                           <div key={benefit} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
@@ -679,11 +338,11 @@ export default function EnvironmentPage() {
                   <button
                     key={config.name}
                     onClick={() => setSelectedConfig(index)}
-                    className={`py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors ${
+                    className={"py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors " + (
                       selectedConfig === index
                         ? 'border-green-500 text-green-600 dark:text-green-400'
                         : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                    }`}
+                    )}
                   >
                     {config.name}
                   </button>
@@ -708,11 +367,11 @@ export default function EnvironmentPage() {
                     <button
                       key={file.name}
                       onClick={() => setSelectedFile(index)}
-                      className={`py-2 px-3 border-b-2 font-medium text-sm transition-colors ${
+                      className={"py-2 px-3 border-b-2 font-medium text-sm transition-colors " + (
                         selectedFile === index
                           ? 'border-green-500 text-green-600 dark:text-green-400'
                           : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                      }`}
+                      )}
                     >
                       {file.name}
                     </button>
@@ -721,8 +380,7 @@ export default function EnvironmentPage() {
               </div>
               
               <CodeBlock
-                language={configurationExamples[selectedConfig].files[selectedFile].name.endsWith('.ts') ? 'typescript' : 
-                         configurationExamples[selectedConfig].files[selectedFile].name.endsWith('.yml') ? 'yaml' : 'bash'}
+                language="bash"
                 code={configurationExamples[selectedConfig].files[selectedFile].content}
               />
             </div>
@@ -738,11 +396,11 @@ export default function EnvironmentPage() {
                   <button
                     key={platform.platform}
                     onClick={() => setSelectedSecret(index)}
-                    className={`py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors ${
+                    className={"py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors " + (
                       selectedSecret === index
                         ? 'border-green-500 text-green-600 dark:text-green-400'
                         : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-                    }`}
+                    )}
                   >
                     {platform.platform}
                   </button>
@@ -769,7 +427,7 @@ export default function EnvironmentPage() {
               </div>
               
               <CodeBlock
-                language={selectedSecret === 1 ? 'yaml' : selectedSecret >= 2 ? 'typescript' : 'bash'}
+                language={selectedSecret === 1 ? 'yaml' : 'bash'}
                 code={secretsManagement[selectedSecret].setup}
               />
             </div>
@@ -832,67 +490,14 @@ export default function EnvironmentPage() {
             <DemoCardStatic title="Setup Básico" description="Configuração inicial de variáveis">
               <CodeBlock
                 language="bash"
-                code={`# 1. Criar arquivo .env.example
-cat > .env.example << 'EOF'
-# Application
-NODE_ENV=development
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-PORT=3000
-
-# Database
-DATABASE_URL=postgresql://user:password@localhost:5432/myapp
-
-# Authentication
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key
-
-# External APIs
-STRIPE_PUBLISHABLE_KEY=pk_test_...
-STRIPE_SECRET_KEY=sk_test_...
-EOF
-
-# 2. Copiar para .env.local
-cp .env.example .env.local
-
-# 3. Editar com valores reais
-nano .env.local
-
-# 4. Adicionar ao .gitignore
-echo ".env.local" >> .gitignore
-echo ".env.*.local" >> .gitignore`}
+                code={"# 1. Criar arquivo .env.example\ncat > .env.example << 'EOF'\n# Application\nNODE_ENV=development\nNEXT_PUBLIC_APP_URL=http://localhost:3000\nPORT=3000\n\n# Database\nDATABASE_URL=postgresql://user:password@localhost:5432/myapp\n\n# Authentication\nNEXTAUTH_URL=http://localhost:3000\nNEXTAUTH_SECRET=your-secret-key\n\n# External APIs\nSTRIPE_PUBLISHABLE_KEY=pk_test_...\nSTRIPE_SECRET_KEY=sk_test_...\nEOF\n\n# 2. Copiar para .env.local\ncp .env.example .env.local\n\n# 3. Editar com valores reais\nnano .env.local\n\n# 4. Adicionar ao .gitignore\necho \".env.local\" >> .gitignore\necho \".env.*.local\" >> .gitignore"}
               />
             </DemoCardStatic>
 
             <DemoCardStatic title="Validação de Config" description="Validar configurações na inicialização">
               <CodeBlock
                 language="typescript"
-                code={`// lib/config.ts
-import { z } from 'zod'
-
-const configSchema = z.object({
-  NODE_ENV: z.enum(['development', 'staging', 'production']),
-  DATABASE_URL: z.string().url(),
-  NEXTAUTH_SECRET: z.string().min(32),
-  STRIPE_SECRET_KEY: z.string().startsWith('sk_'),
-})
-
-function validateConfig() {
-  try {
-    return configSchema.parse(process.env)
-  } catch (error) {
-    console.error('❌ Invalid configuration:')
-    console.error(error.errors)
-    process.exit(1)
-  }
-}
-
-export const config = validateConfig()
-
-// Usar na aplicação
-import { config } from '@/lib/config'
-
-console.log('✅ Configuration validated')
-console.log('Environment:', config.NODE_ENV)`}
+                code={"// lib/config.ts\nimport { z } from 'zod'\n\nconst configSchema = z.object({\n  NODE_ENV: z.enum(['development', 'staging', 'production']),\n  DATABASE_URL: z.string().url(),\n  NEXTAUTH_SECRET: z.string().min(32),\n  STRIPE_SECRET_KEY: z.string().startsWith('sk_'),\n})\n\nfunction validateConfig() {\n  try {\n    return configSchema.parse(process.env)\n  } catch (error) {\n    console.error('❌ Invalid configuration:')\n    console.error(error.errors)\n    process.exit(1)\n  }\n}\n\nexport const config = validateConfig()\n\n// Usar na aplicação\nimport { config } from '@/lib/config'\n\nconsole.log('✅ Configuration validated')\nconsole.log('Environment:', config.NODE_ENV)"}
               />
             </DemoCardStatic>
           </div>

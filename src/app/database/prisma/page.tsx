@@ -678,9 +678,13 @@ export default function PrismaPage() {
                 <DemoCardStatic
                   title={codeExamples[selectedExample].title}
                   description={codeExamples[selectedExample].description}
-                  code={codeExamples[selectedExample].code}
-                  language={codeExamples[selectedExample].language}
-                />
+                >
+                  <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                    <pre className="text-blue-400 text-sm">
+                      <code>{codeExamples[selectedExample].code}</code>
+                    </pre>
+                  </div>
+                </DemoCardStatic>
               </div>
             </div>
           </>
