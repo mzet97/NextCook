@@ -53,44 +53,45 @@ describe('useCounter', () => {
 
   it('should set count to specific value', () => {
     const { result } = renderHook(() => useCounter(0))
-    
+
     act(() => {
-      result.current.setCount(25)
+      result.current.set(25)
     })
-    
+
     expect(result.current.count).toBe(25)
   })
 
   it('should increment by custom step', () => {
-    const { result } = renderHook(() => useCounter(0))
-    
+    const { result } = renderHook(() => useCounter(0, { step: 5 }))
+
     act(() => {
-      result.current.increment(5)
+      result.current.increment()
     })
-    
+
     expect(result.current.count).toBe(5)
   })
 
   it('should decrement by custom step', () => {
-    const { result } = renderHook(() => useCounter(10))
-    
+    const { result } = renderHook(() => useCounter(10, { step: 3 }))
+
     act(() => {
-      result.current.decrement(3)
+      result.current.decrement()
     })
-    
+
     expect(result.current.count).toBe(7)
   })
 
   it('should handle multiple operations', () => {
     const { result } = renderHook(() => useCounter(0))
-    
+
     act(() => {
-      result.current.increment(5)
-      result.current.decrement(2)
-      result.current.increment()
+      result.current.increment() // 1
+      result.current.increment() // 2
+      result.current.increment() // 3
+      result.current.decrement() // 2
     })
-    
-    expect(result.current.count).toBe(4)
+
+    expect(result.current.count).toBe(2)
   })
 
   it('should work with negative initial values', () => {

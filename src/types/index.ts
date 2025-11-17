@@ -153,7 +153,7 @@ export interface CodeBlockProps {
 export interface DemoCardProps {
   title: string;
   description: string;
-  icon: string;
+  icon: string | React.ReactNode;
   href?: string;
   color: string;
 }

@@ -58,25 +58,25 @@ describe('useCounter Hook', () => {
   it('should set count to specific value', () => {
     const { result } = renderHook(() => useCounter());
     const newValue = 42;
-    
+
     act(() => {
-      result.current.setValue(newValue);
+      result.current.set(newValue);
     });
-    
+
     expect(result.current.count).toBe(newValue);
   });
 
   it('should handle multiple operations', () => {
     const { result } = renderHook(() => useCounter(0));
-    
+
     act(() => {
       result.current.increment(); // 1
       result.current.increment(); // 2
       result.current.decrement(); // 1
-      result.current.setValue(10); // 10
+      result.current.set(10); // 10
       result.current.increment(); // 11
     });
-    
+
     expect(result.current.count).toBe(11);
   });
 });

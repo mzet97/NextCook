@@ -12,7 +12,7 @@ global.IntersectionObserver = class IntersectionObserver {
   unobserve() {
     return null;
   }
-};
+} as any;
 
 // Mock ResizeObserver
 global.ResizeObserver = class ResizeObserver {
@@ -26,7 +26,7 @@ global.ResizeObserver = class ResizeObserver {
   unobserve() {
     return null;
   }
-};
+} as any;
 
 // Mock matchMedia
 Object.defineProperty(window, 'matchMedia', {
@@ -59,58 +59,15 @@ jest.mock('next/navigation', () => ({
       back: jest.fn(),
       forward: jest.fn(),
       refresh: jest.fn(),
-    }
+    };
   },
   useSearchParams() {
-    return new URLSearchParams()
+    return new URLSearchParams();
   },
   usePathname() {
-    return '/'
+    return '/';
   },
-}))
-
-// Mock window.matchMedia
-Object.defineProperty(window, 'matchMedia', {
-  writable: true,
-  value: jest.fn().mockImplementation(query => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addListener: jest.fn(), // deprecated
-    removeListener: jest.fn(), // deprecated
-    addEventListener: jest.fn(),
-    removeEventListener: jest.fn(),
-    dispatchEvent: jest.fn(),
-  })),
-})
-
-// Mock IntersectionObserver
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
-  observe() {
-    return null
-  }
-  disconnect() {
-    return null
-  }
-  unobserve() {
-    return null
-  }
-}
-
-// Mock ResizeObserver
-global.ResizeObserver = class ResizeObserver {
-  constructor() {}
-  observe() {
-    return null
-  }
-  disconnect() {
-    return null
-  }
-  unobserve() {
-    return null
-  }
-}
+}));
 
 // Mock localStorage
 const localStorageMock = {
@@ -118,8 +75,12 @@ const localStorageMock = {
   setItem: jest.fn(),
   removeItem: jest.fn(),
   clear: jest.fn(),
-}
-global.localStorage = localStorageMock
+  length: 0,
+  key: jest.fn(),
+};
+Object.defineProperty(window, 'localStorage', {
+  value: localStorageMock,
+});
 
 // Mock sessionStorage
 const sessionStorageMock = {
@@ -127,5 +88,9 @@ const sessionStorageMock = {
   setItem: jest.fn(),
   removeItem: jest.fn(),
   clear: jest.fn(),
-}
-global.sessionStorage = sessionStorageMock
+  length: 0,
+  key: jest.fn(),
+};
+Object.defineProperty(window, 'sessionStorage', {
+  value: sessionStorageMock,
+});

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { cookies } from 'next/headers';
@@ -8,19 +7,15 @@ import Navigation from "@/components/Navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import FooterContent from "@/components/FooterContent";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
+// Using system fonts for better reliability and performance
+// You can add Google Fonts back when you have internet access during build
+// Example:
+// import { Inter, JetBrains_Mono } from "next/font/google";
+// const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations({ namespace: 'metadata' });
-  
+
   return {
     title: t('title'),
     description: t('description'),
@@ -41,7 +36,7 @@ export default async function RootLayout({
 }) {
   // Get messages for the current locale
   const messages = await getMessages();
-  
+
   // Get current locale from cookies
   const cookieStore = await cookies();
   const locale = cookieStore.get('locale')?.value || 'pt';
@@ -49,7 +44,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}
+        className="font-sans antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300"
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>

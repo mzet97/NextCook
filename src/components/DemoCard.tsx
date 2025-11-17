@@ -26,7 +26,11 @@ function DemoCard({ title, description, icon, href, color, children }: DemoCardP
     <div className={`card border-2 transition-all duration-300 hover:scale-105 hover:shadow-xl ${borderClasses[color as keyof typeof borderClasses] || borderClasses.blue}`}>
       {/* Icon with gradient background */}
       <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${colorClasses[color as keyof typeof colorClasses] || colorClasses.blue} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-        <span className="text-2xl text-white">{icon}</span>
+        {typeof icon === 'string' ? (
+          <span className="text-2xl text-white">{icon}</span>
+        ) : (
+          <div className="text-white">{icon}</div>
+        )}
       </div>
       
       {/* Content */}

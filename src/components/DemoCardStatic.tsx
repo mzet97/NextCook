@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 interface DemoCardStaticProps {
   title: string;
   description: string;
-  icon?: string;
+  icon?: string | ReactNode;
   color?: string;
   children?: ReactNode;
   category?: string;
@@ -65,7 +65,11 @@ function DemoCardStatic({
       {/* Icon with gradient background */}
       {icon && (
         <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${colorClasses[color as keyof typeof colorClasses] || colorClasses.blue} flex items-center justify-center mb-4`}>
-          <span className="text-2xl text-white">{icon}</span>
+          {typeof icon === 'string' ? (
+            <span className="text-2xl text-white">{icon}</span>
+          ) : (
+            <div className="text-white">{icon}</div>
+          )}
         </div>
       )}
       
