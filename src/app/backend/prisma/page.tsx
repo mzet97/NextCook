@@ -90,8 +90,8 @@ const mockPosts = [
 
 export default function PrismaPage() {
   const [selectedTab, setSelectedTab] = useState('schema');
-  const [selectedUser, setSelectedUser] = useState(null);
-  const [queryResult, setQueryResult] = useState(null);
+  const [selectedUser, setSelectedUser] = useState<typeof mockUsers[0] | null>(null);
+  const [queryResult, setQueryResult] = useState<any>(null);
 
   const executeQuery = (queryType: string) => {
     // Simulate query execution

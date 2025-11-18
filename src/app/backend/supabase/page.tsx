@@ -141,7 +141,7 @@ export default function SupabasePage() {
   const [selectedAuth, setSelectedAuth] = useState('email');
   const [selectedRealtime, setSelectedRealtime] = useState(0);
   const [isConnected, setIsConnected] = useState(false);
-  const [queryResult, setQueryResult] = useState(null);
+  const [queryResult, setQueryResult] = useState<any>(null);
 
   const simulateQuery = (operation: string) => {
     setTimeout(() => {

@@ -1081,10 +1081,10 @@ console.log('Simulated event:', paymentEvent);`
 
 export default function WebhooksPage() {
   const [selectedExample, setSelectedExample] = useState(0);
-  const [webhookLogs, setWebhookLogs] = useState([]);
+  const [webhookLogs, setWebhookLogs] = useState<any[]>([]);
   const [isSimulating, setIsSimulating] = useState(false);
 
-  const simulateWebhook = async (eventType) => {
+  const simulateWebhook = async (eventType: string) => {
     setIsSimulating(true);
     
     // Simular recebimento de webhook

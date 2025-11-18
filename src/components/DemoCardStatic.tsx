@@ -11,17 +11,21 @@ interface DemoCardStaticProps {
   category?: string;
   tags?: string[];
   showFavorite?: boolean;
+  code?: string;
+  language?: string;
 }
 
-function DemoCardStatic({ 
-  title, 
-  description, 
-  icon, 
-  color = 'blue', 
-  children, 
+function DemoCardStatic({
+  title,
+  description,
+  icon,
+  color = 'blue',
+  children,
   category = 'Geral',
   tags = [],
-  showFavorite = true 
+  showFavorite = true,
+  code,
+  language
 }: DemoCardStaticProps) {
   const pathname = usePathname();
   const colorClasses = {
@@ -83,6 +87,15 @@ function DemoCardStatic({
         </p>
       </div>
       
+      {/* Code snippet */}
+      {code && language && (
+        <div className="mt-4">
+          <pre className="bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
+            <code className={`language-${language}`}>{code}</code>
+          </pre>
+        </div>
+      )}
+
       {/* Children content */}
       {children && (
         <div className="mt-4">

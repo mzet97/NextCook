@@ -145,7 +145,7 @@ const mockPosts = [
 export default function TRPCPage() {
   const [selectedTab, setSelectedTab] = useState('setup');
   const [selectedMiddleware, setSelectedMiddleware] = useState(0);
-  const [queryResult, setQueryResult] = useState(null);
+  const [queryResult, setQueryResult] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const simulateQuery = async (operation: string) => {
